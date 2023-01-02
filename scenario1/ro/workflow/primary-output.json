@@ -1,0 +1,14 @@
+{
+    "wf_output_file": {
+        "location": "../data/7c/7cd19fa17a0298cae6d306be6593de6ff1aea0ac",
+        "basename": "output.md",
+        "nameroot": "output",
+        "nameext": ".md",
+        "class": "File",
+        "checksum": "sha1$7cd19fa17a0298cae6d306be6593de6ff1aea0ac",
+        "size": 87,
+        "format": "https://www.iana.org/assignments/media-types/text/markdown",
+        "http://commonwl.org/cwltool#generation": 0,
+        "@id": "urn:uuid:5a033843-37bc-4950-a5ac-a55c04297721"
+    }
+}

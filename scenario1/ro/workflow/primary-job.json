@@ -1,0 +1,12 @@
+{
+    "wf_input_file": {
+        "class": "File",
+        "location": "../data/b6/b62e67b129bce94fb033a84f248a3e77c479e216",
+        "format": "https://www.iana.org/assignments/media-types/text/tab-separated-values",
+        "size": 23,
+        "basename": "input_file.tsv",
+        "nameroot": "input_file",
+        "nameext": ".tsv",
+        "checksum": "sha1$b62e67b129bce94fb033a84f248a3e77c479e216"
+    }
+}
