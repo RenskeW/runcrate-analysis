@@ -1,0 +1,11 @@
+{
+    "wf_input_fasta": {
+        "class": "File",
+        "location": "../data/ac/ac39022d2a46ce20025b134101fdf0aae3b7cbe8",
+        "size": 355,
+        "basename": "test.fasta",
+        "nameroot": "test",
+        "nameext": ".fasta",
+        "checksum": "sha1$ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
+    }
+}

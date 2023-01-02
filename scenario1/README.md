@@ -13,25 +13,26 @@ Both name and ORCID ID are included in `ro-crate-metadata.json`.
 
 ## `label`
 
-Propagated: ?
-
-Not propagated: ?
+None of the `label` fields are propagated to `ro-crate-metadata.json`, but they are included in `packed.cwl`.
 
 ## `doc`
 
-Propagated: ?
-
-Not propagated: ?
+Only [CommandLineTool "doc" field](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L132) is included in `ro-crate-metadata.json`. The others are only included in `packed.cwl`.
 
 ## `format`
 
-?
+Propagated:
+
+- [CommandInputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L149)
+- [CommandOutputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L156)
+- [WorkflowInputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L106)
+- [WorkflowOutputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L110)
+
+Not propagated:
+
+- [WorkflowInputParameter value](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/ro/workflow/primary-job.json#L5)
 
 ## `intent`
 
-?
-
-
-
-
+None of the `intent` fields ([Workflow](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L43) and [CommandLineTool](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L9)) are propated to `ro-crate-metadata.json`, but they are part of `packed.cwl`.
 

@@ -1,0 +1,16 @@
+[2023-01-02T18:13:32,274.885893Z] [cwltool] /usr/local/bin/cwltool --provenance ./ro wf.cwl
+[2023-01-02T18:13:32,284.016132Z] Resolved 'wf.cwl' to 'file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario2_b/wf.cwl'
+[2023-01-02T18:13:36,461.538076Z] [provenance] Adding to RO file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario2_b/test.fasta
+[2023-01-02T18:13:36,472.688913Z] [workflow ] start
+[2023-01-02T18:13:36,473.345041Z] [workflow ] starting step step1
+[2023-01-02T18:13:36,473.700047Z] [step step1] start
+[2023-01-02T18:13:36,494.087934Z] [job step1] /private/tmp/docker_tmpmm6sz7pj$ python3 \
+    /private/tmp/docker_tmpagczbs4l/stgdc29a6a1-392b-4ae4-99c7-42f5d2f7d40b/get_pc7_inputs.py \
+    /private/tmp/docker_tmpagczbs4l/stge750400f-cd8a-4c7a-a49f-d307dff37aae/test.fasta \
+    -o \
+    output_directory_name
+[2023-01-02T18:13:38,392.510891Z] [job step1] Max memory used: 22MiB
+[2023-01-02T18:13:38,443.941116Z] [job step1] completed success
+[2023-01-02T18:13:38,444.360971Z] [step step1] completed success
+[2023-01-02T18:13:38,445.482016Z] [workflow ] completed success
+[2023-01-02T18:13:39,523.227930Z] Final process status is success
