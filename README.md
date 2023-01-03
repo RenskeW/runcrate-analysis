@@ -59,3 +59,23 @@ Results of analysis:
 
 - In contrast to CWLProv RDF provenance graph, the name/tag of the container image is not included in `ro-crate-metadata.json`.
 
+## Scenario 4: Analyze representation of `String`, `File`, `Directory` and `File array` input parameters AND `ResourceRequirement`
+
+Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
+
+RO of workflow containing 4 different types of inputs and with defined hardware requirements for one of the CommandLineTools.
+
+- [scenario4_a](./scenario4_a): CWLProv RO cannot be converted by runcrate because one of the CommandLineTools is defined within the Workflow description.
+- [scenario4_b](./scenario3_b): The same workflow, but here all CommandLineTools are defined in separate files.
+
+Results of analysis of `scenario4_b`:
+
+- ResourceRequirement: included in `packed.cwl`, but not in `ro-crate-metadata.json`.
+- Representation of input parameter values:
+    - All inputs are mapped to their input parameters via `exampleOfWork`.
+    - File: Listed in `ro-crate-metadata.json` as `File`.
+    - String: Listed in `ro-crate-metadata.json` as `Text`. 
+    - Directory: Listed in `ro-crate-metadata.json` as `Dataset` and linked to the files it contains via `hasPart`.
+    - File array: Listed in `ro-crate-metadata.json` as `File`, `multipleValues=TRUE` and linked to the files it contains via `values`.
+
+
