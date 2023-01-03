@@ -1,6 +1,6 @@
 # runcrate-analysis
 
-This repository documents the analysis of WorkflowRun RO-Crates converted from CWLProv RO Bundless using [runcrate](https://github.com/ResearchObject/runcrate). 
+This repository documents the analysis of Workflow Run RO-Crates converted from CWLProv RO Bundles using [runcrate](https://github.com/ResearchObject/runcrate). 
 
 Here I perform the same analysis that was done originally using CWLProv RO Bundles, described in <https://doi.org/10.5281/zenodo.7014948>. 
 
