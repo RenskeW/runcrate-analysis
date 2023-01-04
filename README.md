@@ -4,6 +4,13 @@ This repository documents the analysis of Workflow Run RO-Crates converted from 
 
 Here I perform the same analysis that was done originally using CWLProv RO Bundles, described in <https://doi.org/10.5281/zenodo.7014948>. 
 
+I used the following approach and documented it in the [Issues](https://github.com/RenskeW/runcrate-analysis/issues):
+
+1. Provenance metadata was classified into 6 categories: T1-6.
+2. For each category, I made an inventory of metadata that is contained in CWLProv RO Bundles (in RDF, `packed.cwl`, and `primary-job.json`/`primary-output.json`).
+3. Subsequently, I assessed if and how this information is represented in Workflow Run RO-Crates converted by runcrate, based on a number of examples (see below).
+4. Finally, I provided suggestions how to represent metadata that is present in CWLProv but missing in RO-Crate.
+
 ## Scenario 1: Analyze representation of CWL metadata fields, human agent, file characteristics, execution details
 
 Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
