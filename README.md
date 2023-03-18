@@ -43,18 +43,18 @@ Results:
     - Workflow: Linked to steps and to CommandLineTools executed in the steps. Programming language is specified. 
     - Parameters: An improvement compared to CWLProv, workflow and CommandLineTool parameters are described as independent entities (`FormalParameter`) in `ro-crate-metadata.json`. 
 
-### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d).
 
 After [update](https://github.com/ResearchObject/runcrate/pull/15), I performed the analysis again.
 
-In addition to the above, the ROCrate now also contains:
+In addition to the above, the RO-Crate now also contains:
 
-- basename (of input and output files)
-- checksum (of input and output files)
+- basename (of [input](https://github.com/RenskeW/runcrate-analysis/blob/79288ed661e6f00250e3d344b3bac5fa6412311c/scenario1/rocrate_v2/ro-crate-metadata.json#L269) and [output](https://github.com/RenskeW/runcrate-analysis/blob/79288ed661e6f00250e3d344b3bac5fa6412311c/scenario1/rocrate_v2/ro-crate-metadata.json#L283) files)
+- checksum (of [input](https://github.com/RenskeW/runcrate-analysis/blob/79288ed661e6f00250e3d344b3bac5fa6412311c/scenario1/rocrate_v2/ro-crate-metadata.json#L278) and [output](https://github.com/RenskeW/runcrate-analysis/blob/79288ed661e6f00250e3d344b3bac5fa6412311c/scenario1/rocrate_v2/ro-crate-metadata.json#L292) files)
 
 ## Scenario 2: Analyze representation of `SoftwareRequirement`
 
-Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
 
 RO of workflow containing `SoftwareRequirement` in CommandLineTool description.
 
@@ -65,18 +65,9 @@ Results of analysis of Scenario 2B:
 
 - SoftwareRequirement is not part of `ro-crate-metadata.json`. 
 
-### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
-
-After [update](https://github.com/ResearchObject/runcrate/pull/15), I performed the analysis again.
-
-In addition to the above, the ROCrate now also contains:
-
-- basename (of input and output files)
-- checksum (of input and output files)
-
 ## Scenario 3: Analyze representation of `DockerRequirement`
 
-Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
 
 RO of workflow containing `DockerRequirement` in CommandLineTool description.
 
