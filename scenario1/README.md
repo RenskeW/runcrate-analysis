@@ -1,4 +1,4 @@
-# Scenario 1
+# Scenario 1 
 
 ![Workflow Graph](./wf_graph.svg)
 
@@ -36,3 +36,11 @@ Not propagated:
 
 None of the `intent` fields ([Workflow](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L43) and [CommandLineTool](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L9)) are propated to `ro-crate-metadata.json`, but they are part of `packed.cwl`.
 
+# Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
+
+Rerun the conversion step: `runcrate convert ./ro --output ./rocrate_v2`
+
+Newly propagated:
+
+- basename
+- checksum

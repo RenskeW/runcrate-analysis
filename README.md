@@ -6,7 +6,7 @@ Here I perform the same analysis that was done originally using CWLProv RO Bundl
 
 ## Scenario 1: Analyze representation of CWL metadata fields, human agent, file characteristics, execution details
 
-Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
 
 RO of workflow with metadata fields for the following workflow elements:
 
@@ -36,6 +36,15 @@ Results:
     - Workflow: Linked to steps and to CommandLineTools executed in the steps. Programming language is specified. 
     - Parameters: An improvement compared to CWLProv, workflow and CommandLineTool parameters are described as independent entities (`FormalParameter`) in `ro-crate-metadata.json`. 
 
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
+
+After [update](https://github.com/ResearchObject/runcrate/pull/15), I performed the analysis again.
+
+In addition to the above, the ROCrate now also contains:
+
+- basename (of input and output files)
+- checksum (of input and output files)
+
 ## Scenario 2: Analyze representation of `SoftwareRequirement`
 
 Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/7c77b0dabe45e60a2cb87d8320a5c1df592fb477). 
@@ -48,6 +57,15 @@ RO of workflow containing `SoftwareRequirement` in CommandLineTool description.
 Results of analysis of Scenario 2B:
 
 - SoftwareRequirement is not part of `ro-crate-metadata.json`. 
+
+### Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
+
+After [update](https://github.com/ResearchObject/runcrate/pull/15), I performed the analysis again.
+
+In addition to the above, the ROCrate now also contains:
+
+- basename (of input and output files)
+- checksum (of input and output files)
 
 ## Scenario 3: Analyze representation of `DockerRequirement`
 
@@ -77,5 +95,4 @@ Results of analysis of `scenario4_b`:
     - String: Listed in `ro-crate-metadata.json` as `Text`. 
     - Directory: Listed in `ro-crate-metadata.json` as `Dataset` and linked to the files it contains via `hasPart`.
     - File array: Listed in `ro-crate-metadata.json` as `File`, `multipleValues=TRUE` and linked to the files it contains via `values`.
-
 

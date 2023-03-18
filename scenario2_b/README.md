@@ -15,5 +15,7 @@ Output: `./output_directory_name`
 - Convert to ROCrate: `runcrate convert ./ro --output ./rocrate`
 
 
+# Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
 
+Rerun conversion step: `runcrate convert ./ro --output ./rocrate_v2`
 
