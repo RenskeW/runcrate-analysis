@@ -1,0 +1,115 @@
+@prefix cwlprov: <https://w3id.org/cwl/prov#> .
+@prefix data: <urn:hash::sha1:> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix id: <urn:uuid:> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wf: <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+id:5a033843-37bc-4950-a5ac-a55c04297721 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:activity id:d589fe1c-9550-46b1-b2ed-260a515e7410 ;
+            prov:atTime "2023-01-02T16:33:43.075200"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/primary/wf_output_file> ],
+        [ a prov:Generation ;
+            prov:activity id:be3be710-2e3f-4b1b-a86d-ae2289df5412 ;
+            prov:atTime "2023-01-02T16:33:43.059536"^^xsd:dateTime ;
+            prov:hadRole <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_step/clt_output_file> ] ;
+    prov:specializationOf data:7cd19fa17a0298cae6d306be6593de6ff1aea0ac ;
+    cwlprov:basename "output.md"^^xsd:string ;
+    cwlprov:nameext ".md"^^xsd:string ;
+    cwlprov:nameroot "output"^^xsd:string .
+
+wf:main a wfdesc:Workflow,
+        prov:Entity,
+        prov:Plan ;
+    rdfs:label "Prospective provenance"^^xsd:string ;
+    wfdesc:hasSubProcess <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_step> .
+
+orcid:0000-0003-0902-0086 a schema:Person,
+        prov:Agent,
+        prov:Person ;
+    rdfs:label "Renske de Wit"^^xsd:string ;
+    schema:name "Renske de Wit"^^xsd:string ;
+    foaf:name "Renske de Wit"^^xsd:string .
+
+data:7cd19fa17a0298cae6d306be6593de6ff1aea0ac a wfprov:Artifact,
+        prov:Entity .
+
+id:2acf6951-78ca-41f2-8c0e-05a3c6e2fe74 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:b62e67b129bce94fb033a84f248a3e77c479e216 ;
+    cwlprov:basename "input_file.tsv"^^xsd:string ;
+    cwlprov:nameext ".tsv"^^xsd:string ;
+    cwlprov:nameroot "input_file"^^xsd:string .
+
+id:91b44983-4004-454e-8def-27c974cdc826 a wf4ever:File,
+        wfprov:Artifact,
+        prov:Entity ;
+    prov:specializationOf data:b62e67b129bce94fb033a84f248a3e77c479e216 ;
+    cwlprov:basename "input_file.tsv"^^xsd:string ;
+    cwlprov:nameext ".tsv"^^xsd:string ;
+    cwlprov:nameroot "input_file"^^xsd:string .
+
+id:be3be710-2e3f-4b1b-a86d-ae2289df5412 a wfprov:ProcessRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main/wf_step"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_step> ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2023-01-02T16:33:43.059503"^^xsd:dateTime ;
+            prov:hadActivity id:d589fe1c-9550-46b1-b2ed-260a515e7410 ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2023-01-02T16:33:43.033561"^^xsd:dateTime ;
+            prov:hadActivity id:d589fe1c-9550-46b1-b2ed-260a515e7410 ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2023-01-02T16:33:43.037773"^^xsd:dateTime ;
+            prov:entity id:91b44983-4004-454e-8def-27c974cdc826 ;
+            prov:hadRole <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_step/clt_input_file> ] ;
+    prov:wasAssociatedWith id:2141b5c0-918b-41b7-a306-151167ff3c89 .
+
+id:dabf7ba3-5771-4cd9-8498-b38c3a759852 a prov:Agent ;
+    prov:actedOnBehalfOf orcid:0000-0003-0902-0086 .
+
+<arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_step> a wfdesc:Process,
+        prov:Entity,
+        prov:Plan .
+
+data:b62e67b129bce94fb033a84f248a3e77c479e216 a wfprov:Artifact,
+        prov:Entity .
+
+id:d589fe1c-9550-46b1-b2ed-260a515e7410 a wfprov:WorkflowRun,
+        prov:Activity ;
+    rdfs:label "Run of workflow/packed.cwl#main"^^xsd:string ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:hadPlan wf:main ] ;
+    prov:qualifiedEnd [ a prov:End ;
+            prov:atTime "2023-01-02T16:33:43.075496"^^xsd:dateTime ;
+            prov:hadActivity id:2141b5c0-918b-41b7-a306-151167ff3c89 ] ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2023-01-02T16:33:42.985629"^^xsd:dateTime ;
+            prov:hadActivity id:2141b5c0-918b-41b7-a306-151167ff3c89 ] ;
+    prov:qualifiedUsage [ a prov:Usage ;
+            prov:atTime "2023-01-02T16:33:43.027118"^^xsd:dateTime ;
+            prov:entity id:2acf6951-78ca-41f2-8c0e-05a3c6e2fe74 ;
+            prov:hadRole <arcp://uuid,d589fe1c-9550-46b1-b2ed-260a515e7410/workflow/packed.cwl#main/wf_input_file> ] ;
+    prov:startedAtTime "2023-01-02T16:33:42.985479"^^xsd:dateTime ;
+    prov:wasAssociatedWith id:2141b5c0-918b-41b7-a306-151167ff3c89 .
+
+id:2141b5c0-918b-41b7-a306-151167ff3c89 a wfprov:WorkflowEngine,
+        prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "cwltool 3.1.20220802125926"^^xsd:string ;
+    prov:qualifiedStart [ a prov:Start ;
+            prov:atTime "2023-01-02T16:33:42.985384"^^xsd:dateTime ;
+            prov:hadActivity id:dabf7ba3-5771-4cd9-8498-b38c3a759852 ] .
+

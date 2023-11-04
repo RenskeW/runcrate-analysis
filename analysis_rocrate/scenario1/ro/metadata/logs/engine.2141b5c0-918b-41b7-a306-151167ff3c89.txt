@@ -1,0 +1,12 @@
+[2023-01-02T15:33:40,378.244162Z] [cwltool] /Users/renskedewit/Documents/GitHub/runcrate/venv/bin/cwltool --full-name Renske de Wit --orcid https://orcid.org/0000-0003-0902-0086 --provenance ./ro wf.cwl wf_job.yml
+[2023-01-02T15:33:40,385.944128Z] Resolved 'wf.cwl' to 'file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario1/wf.cwl'
+[2023-01-02T15:33:43,17.931938Z] [provenance] Adding to RO file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario1/input_file.tsv
+[2023-01-02T15:33:43,27.252913Z] [workflow ] start
+[2023-01-02T15:33:43,28.158903Z] [workflow ] starting step wf_step
+[2023-01-02T15:33:43,28.676033Z] [step wf_step] start
+[2023-01-02T15:33:43,34.535885Z] [job wf_step] /private/tmp/docker_tmp2gay8u14$ echo \
+    /private/tmp/docker_tmpwerb69d8/stg2db72cfb-89b4-4cd7-b32e-231191a58d9b/input_file.tsv > /private/tmp/docker_tmp2gay8u14/output.md
+[2023-01-02T15:33:43,64.549208Z] [job wf_step] completed success
+[2023-01-02T15:33:43,65.157175Z] [step wf_step] completed success
+[2023-01-02T15:33:43,65.543890Z] [workflow ] completed success
+[2023-01-02T15:33:43,239.780188Z] Final process status is success

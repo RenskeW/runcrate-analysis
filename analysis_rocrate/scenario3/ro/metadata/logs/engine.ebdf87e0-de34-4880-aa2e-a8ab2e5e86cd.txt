@@ -1,0 +1,31 @@
+[2023-01-02T18:37:07,288.259983Z] [cwltool] /usr/local/bin/cwltool --provenance ./ro wf.cwl
+[2023-01-02T18:37:07,304.275036Z] Resolved 'wf.cwl' to 'file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario3/wf.cwl'
+[2023-01-02T18:37:10,403.980970Z] [provenance] Adding to RO file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario3/test.fasta
+[2023-01-02T18:37:10,426.497936Z] [workflow ] start
+[2023-01-02T18:37:10,428.708076Z] [workflow ] starting step step1
+[2023-01-02T18:37:10,440.292120Z] [step step1] start
+[2023-01-02T18:37:13,289.311886Z] [job step1] /private/tmp/docker_tmpz9w2srb4$ docker \
+    run \
+    -i \
+    --mount=type=bind,source=/private/tmp/docker_tmpz9w2srb4,target=/wAdxmO \
+    --mount=type=bind,source=/private/tmp/docker_tmp6v1f3u92,target=/tmp \
+    --mount=type=bind,source=/Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario3/test.fasta,target=/var/lib/cwl/stgcb22e846-8389-4aed-845d-49373588df3f/test.fasta,readonly \
+    --mount=type=bind,source=/Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario3/get_pc7_inputs.py,target=/var/lib/cwl/stg0679ca0c-af32-4d68-aec1-0a7e0aa8febc/get_pc7_inputs.py,readonly \
+    --workdir=/wAdxmO \
+    --read-only=true \
+    --user=501:20 \
+    --rm \
+    --cidfile=/private/tmp/docker_tmphjrzz2q4/20230102193713-287348.cid \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/wAdxmO \
+    amancevice/pandas:1.3.4-slim \
+    python3 \
+    /var/lib/cwl/stg0679ca0c-af32-4d68-aec1-0a7e0aa8febc/get_pc7_inputs.py \
+    /var/lib/cwl/stgcb22e846-8389-4aed-845d-49373588df3f/test.fasta \
+    -o \
+    output_directory_name
+[2023-01-02T18:37:22,746.859074Z] [job step1] Max memory used: 27MiB
+[2023-01-02T18:37:24,989.013910Z] [job step1] completed success
+[2023-01-02T18:37:24,989.837170Z] [step step1] completed success
+[2023-01-02T18:37:25,14.999151Z] [workflow ] completed success
+[2023-01-02T18:37:28,405.771017Z] Final process status is success

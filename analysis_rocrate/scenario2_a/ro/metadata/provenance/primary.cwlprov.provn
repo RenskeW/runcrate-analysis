@@ -1,0 +1,78 @@
+document
+  prefix wfprov <http://purl.org/wf4ever/wfprov#>
+  prefix wfdesc <http://purl.org/wf4ever/wfdesc#>
+  prefix cwlprov <https://w3id.org/cwl/prov#>
+  prefix foaf <http://xmlns.com/foaf/0.1/>
+  prefix schema <http://schema.org/>
+  prefix orcid <https://orcid.org/>
+  prefix id <urn:uuid:>
+  prefix data <urn:hash::sha1:>
+  prefix sha256 <nih:sha-256;>
+  prefix researchobject <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/>
+  prefix metadata <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/metadata/>
+  prefix provenance <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/metadata/provenance/>
+  prefix wf <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/workflow/packed.cwl#>
+  prefix input <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/workflow/primary-job.json#>
+  prefix wf4ever <http://purl.org/wf4ever/wf4ever#>
+  prefix ro <http://purl.org/wf4ever/ro#>
+  prefix ore <http://www.openarchives.org/ore/terms/>
+  
+  agent(id:b125feb4-39eb-4f00-86c3-357afd203e28)
+  agent(id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, [prov:type='wfprov:WorkflowEngine', prov:type='prov:SoftwareAgent', prov:label="cwltool 3.1.20221201130942"])
+  wasStartedBy(id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, -, id:b125feb4-39eb-4f00-86c3-357afd203e28, 2023-01-02T19:03:42.480599)
+  activity(id:08d29337-5cd6-4343-924d-ae603863cbd9, 2023-01-02T19:03:42.480670, -, [prov:type='wfprov:WorkflowRun', prov:label="Run of workflow/packed.cwl#main"])
+  wasAssociatedWith(id:08d29337-5cd6-4343-924d-ae603863cbd9, id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, wf:main)
+  wasStartedBy(id:08d29337-5cd6-4343-924d-ae603863cbd9, -, id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, 2023-01-02T19:03:42.480798)
+  entity(wf:main, [prov:type='wfdesc:Workflow', prov:type='prov:Plan', prov:label="Prospective provenance"])
+  entity(wf:main/step1, [prov:type='wfdesc:Process', prov:type='prov:Plan'])
+  entity(wf:main, [wfdesc:hasSubProcess='wf:main/step1', prov:label="Prospective provenance"])
+  entity(data:ac39022d2a46ce20025b134101fdf0aae3b7cbe8, [prov:type='wfprov:Artifact'])
+  entity(id:a585c05c-4ad7-4393-9fa0-74d56a55bc03, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="test.fasta", cwlprov:nameroot="test", cwlprov:nameext=".fasta"])
+  specializationOf(id:a585c05c-4ad7-4393-9fa0-74d56a55bc03, data:ac39022d2a46ce20025b134101fdf0aae3b7cbe8)
+  used(id:08d29337-5cd6-4343-924d-ae603863cbd9, id:a585c05c-4ad7-4393-9fa0-74d56a55bc03, 2023-01-02T19:03:42.535343, [prov:role='wf:main/wf_input_fasta'])
+  activity(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, -, -, [prov:type='wfprov:ProcessRun', prov:label="Run of workflow/packed.cwl#main/step1"])
+  wasAssociatedWith(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, wf:main/step1)
+  wasStartedBy(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, -, id:08d29337-5cd6-4343-924d-ae603863cbd9, 2023-01-02T19:03:42.543962)
+  entity(data:ac39022d2a46ce20025b134101fdf0aae3b7cbe8, [prov:type='wfprov:Artifact'])
+  entity(id:b4c019b3-77bb-4c49-b23c-3bd76b6d885d, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="test.fasta", cwlprov:nameroot="test", cwlprov:nameext=".fasta"])
+  specializationOf(id:b4c019b3-77bb-4c49-b23c-3bd76b6d885d, data:ac39022d2a46ce20025b134101fdf0aae3b7cbe8)
+  used(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, id:b4c019b3-77bb-4c49-b23c-3bd76b6d885d, 2023-01-02T19:03:42.548999, [prov:role='wf:main/step1/fasta'])
+  entity(data:cd2f57b8b38afc46865adffa34afb1c4f6a11602, [prov:type='wfprov:Artifact', prov:value="output_directory_name"])
+  used(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, data:cd2f57b8b38afc46865adffa34afb1c4f6a11602, 2023-01-02T19:03:42.550693, [prov:role='wf:main/step1/outdir'])
+  entity(data:e228d3883e1770adf02f0a0bcdc259dda6b27e91, [prov:type='wfprov:Artifact'])
+  entity(id:40efb483-3c81-4736-b97b-2889892f669c, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="get_pc7_inputs.py", cwlprov:nameroot="get_pc7_inputs", cwlprov:nameext=".py"])
+  specializationOf(id:40efb483-3c81-4736-b97b-2889892f669c, data:e228d3883e1770adf02f0a0bcdc259dda6b27e91)
+  used(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, id:40efb483-3c81-4736-b97b-2889892f669c, 2023-01-02T19:03:42.554954, [prov:role='wf:main/step1/script'])
+  entity(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, [prov:type='prov:Dictionary', prov:type='ro:Folder', prov:type='wfprov:Artifact', prov:type='prov:Collection', ore:isDescribedBy='metadata:directory-a64e9f1a-f484-4a66-9a20-07e0a2cdddd9.ttl', prov:hadDictionaryMember='id:ee77f93d-38af-4949-8e47-953d49d09ad8', prov:hadDictionaryMember='id:0ee7d895-5e38-4302-93a6-e3b71f7179f9', prov:hadDictionaryMember='id:4690abaf-af6e-42a3-811e-b1fb0b945504'])
+  mentionOf(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9#ore, id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, metadata:directory-a64e9f1a-f484-4a66-9a20-07e0a2cdddd9.ttl)
+  entity(data:01d8393f836a79fd05528ecede41c737342076db, [prov:type='wfprov:Artifact'])
+  entity(id:4a5de6fe-934a-487e-9dfe-afa7b4ce9b57, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="pc7_T1011-D1.input"])
+  specializationOf(id:4a5de6fe-934a-487e-9dfe-afa7b4ce9b57, data:01d8393f836a79fd05528ecede41c737342076db)
+  hadMember(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, id:4a5de6fe-934a-487e-9dfe-afa7b4ce9b57)
+  entity(id:4690abaf-af6e-42a3-811e-b1fb0b945504, [prov:type='prov:KeyEntityPair', prov:pairKey="pc7_T1011-D1.input", prov:pairEntity='id:4a5de6fe-934a-487e-9dfe-afa7b4ce9b57'])
+  entity(data:e73d55f489827ce73f62b96f6988e0a9691c486d, [prov:type='wfprov:Artifact'])
+  entity(id:79779289-4b4f-4017-bb98-918ddd90bdc3, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="pc7_test.input"])
+  specializationOf(id:79779289-4b4f-4017-bb98-918ddd90bdc3, data:e73d55f489827ce73f62b96f6988e0a9691c486d)
+  hadMember(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, id:79779289-4b4f-4017-bb98-918ddd90bdc3)
+  entity(id:ee77f93d-38af-4949-8e47-953d49d09ad8, [prov:type='prov:KeyEntityPair', prov:pairKey="pc7_test.input", prov:pairEntity='id:79779289-4b4f-4017-bb98-918ddd90bdc3'])
+  entity(data:2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed, [prov:type='wfprov:Artifact'])
+  entity(id:6efc5c37-467a-48b5-9568-4c136dfc2614, [prov:type='wf4ever:File', prov:type='wfprov:Artifact', cwlprov:basename="pc7_T0963-D1.input"])
+  specializationOf(id:6efc5c37-467a-48b5-9568-4c136dfc2614, data:2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed)
+  hadMember(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, id:6efc5c37-467a-48b5-9568-4c136dfc2614)
+  entity(id:0ee7d895-5e38-4302-93a6-e3b71f7179f9, [prov:type='prov:KeyEntityPair', prov:pairKey="pc7_T0963-D1.input", prov:pairEntity='id:6efc5c37-467a-48b5-9568-4c136dfc2614'])
+  wasGeneratedBy(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, 2023-01-02T19:03:43.377411, [prov:role='wf:main/step1/pc7_features'])
+  wasEndedBy(id:c6332385-e7fd-4fd9-abb8-50e639e9ef6b, -, id:08d29337-5cd6-4343-924d-ae603863cbd9, 2023-01-02T19:03:43.377378)
+  wasGeneratedBy(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, id:08d29337-5cd6-4343-924d-ae603863cbd9, 2023-01-02T19:03:43.420356, [prov:role='wf:main/primary/wf_output_dir'])
+  wasEndedBy(id:08d29337-5cd6-4343-924d-ae603863cbd9, -, id:7456e88d-dae3-4580-b9ba-fa7b05e7ef1d, 2023-01-02T19:03:43.420710)
+  bundle metadata:directory-a64e9f1a-f484-4a66-9a20-07e0a2cdddd9.ttl
+    prefix ro <http://purl.org/wf4ever/ro#>
+    prefix ore <http://www.openarchives.org/ore/terms/>
+    prefix id <urn:uuid:>
+    prefix metadata <arcp://uuid,08d29337-5cd6-4343-924d-ae603863cbd9/metadata/>
+    
+    entity(id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9, [prov:type='ro:Folder', prov:type='ore:Aggregation', ore:aggregates='id:ee77f93d-38af-4949-8e47-953d49d09ad8', ore:aggregates='id:0ee7d895-5e38-4302-93a6-e3b71f7179f9', ore:aggregates='id:4690abaf-af6e-42a3-811e-b1fb0b945504'])
+    entity(id:4690abaf-af6e-42a3-811e-b1fb0b945504, [prov:type='ore:Proxy', prov:type='ro:FolderEntry', ro:entryName="pc7_T1011-D1.input", ore:proxyIn='id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9', ore:proxyFor='id:4a5de6fe-934a-487e-9dfe-afa7b4ce9b57'])
+    entity(id:ee77f93d-38af-4949-8e47-953d49d09ad8, [prov:type='ore:Proxy', prov:type='ro:FolderEntry', ro:entryName="pc7_test.input", ore:proxyIn='id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9', ore:proxyFor='id:79779289-4b4f-4017-bb98-918ddd90bdc3'])
+    entity(id:0ee7d895-5e38-4302-93a6-e3b71f7179f9, [prov:type='ore:Proxy', prov:type='ro:FolderEntry', ro:entryName="pc7_T0963-D1.input", ore:proxyIn='id:a64e9f1a-f484-4a66-9a20-07e0a2cdddd9', ore:proxyFor='id:6efc5c37-467a-48b5-9568-4c136dfc2614'])
+  endBundle
+endDocument
