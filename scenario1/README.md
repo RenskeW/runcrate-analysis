@@ -1,4 +1,10 @@
-# Scenario 1 
+# Scenario 1
+
+Analysis to assess if CWL metadata fields (`label`, `doc`, `intent`, `format`) are propagated to RO-Crate RDF (`ro-crate-metadata.json`) by runcrate 0.4.0. In addition, representation of the human agent that executed the workflow is checked, as well as basename and checksum of the input and output files.
+
+![CWL metadata fields](./cwl_metadata_fields.png)
+
+As an example, we use a simple CWL workflow comprising a single step, one input and one output parameter (both File).
 
 ![Workflow Graph](./wf_graph.svg)
 
@@ -9,38 +15,45 @@
 
 ## Human agent
 
-Both name and ORCID ID are included in `ro-crate-metadata.json`.
+Name: [#L251](./ro-crate-metadata.json) 
+ORCID ID: [#L249](./ro-crate-metadata.json) 
 
 ## `label`
 
-None of the `label` fields are propagated to `ro-crate-metadata.json`, but they are included in `packed.cwl`.
+`label` fields for Workflow, WorkflowStep, and CommandLineTool are propagated to [ro-crate-metadata.json](./ro-crate-metadata.json).
+
+Workflow (#L40): #L111
+WorkflowStep (#L76): #L164
+CommandLineTool (#L7): #182
+WorkflowInputParameter (#L48): Not propagated
+WorkflowOutputParameter (#L58): Not propagated
+WorkflowStepInput: Not in test workflow
+CommandInputParameter (#L18): Not propagated
+CommandOutputParameter: (#L31): Not propagated
 
 ## `doc`
 
-Only [CommandLineTool "doc" field](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L132) is included in `ro-crate-metadata.json`. The others are only included in `packed.cwl`.
+Workflow (#L41): #L100
+WorkflowStep (#L77): #L163
+CommandLineTool (#L8): #L173
+WorkflowInputParameter (#L49): #L143
+WorkflowOutputParameter (#L59): #L151
+CommandInputParameter (#L19): #L193
+CommandOutputParameter (#L32): #L201 
 
 ## `format`
 
-Propagated:
-
-- [CommandInputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L149)
-- [CommandOutputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L156)
-- [WorkflowInputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L106)
-- [WorkflowOutputParameter](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/ro-crate-metadata.json#L110)
-
-Not propagated:
-
-- [WorkflowInputParameter value](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/ro/workflow/primary-job.json#L5)
+WorkflowInputParameter (#L50): #L144
+WorkflowOutputParameter (#L60): #L152
+CommandInputParameter (#L20): #L194
+CommandOutputParameter (#L33): #L202 
 
 ## `intent`
 
-None of the `intent` fields ([Workflow](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L43) and [CommandLineTool](https://github.com/RenskeW/runcrate-analysis/blob/774a2b3c6f00ebe5c68244fa39a660b45618ca25/scenario1/rocrate/packed.cwl#L9)) are propated to `ro-crate-metadata.json`, but they are part of `packed.cwl`.
+Workflow (#L42-44): Not propagated
+CommandLineTool (#L9-11): #L174-176
 
-# Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
+## File characteristics
 
-Rerun the conversion step: `runcrate convert ./ro --output ./rocrate_v2`
-
-Newly propagated:
-
-- basename
-- checksum
+Basename [#L27](./ro/metadata/provenance/primary.cwlprov.ttl): #L292
+Checksum: [#L44](./ro/metadata/provenance/primary.cwlprov.ttl): #L287, #L304
