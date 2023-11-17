@@ -1,0 +1,402 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        "https://w3id.org/ro/terms/workflow-run"
+    ],
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/wfrun/process/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/ro/wfrun/workflow/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/ro/wfrun/provenance/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ],
+            "datePublished": "2023-11-17T12:50:07+00:00",
+            "hasPart": [
+                {
+                    "@id": "packed.cwl"
+                },
+                {
+                    "@id": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
+                },
+                {
+                    "@id": "e228d3883e1770adf02f0a0bcdc259dda6b27e91"
+                },
+                {
+                    "@id": "primary-job.json"
+                }
+            ],
+            "mainEntity": {
+                "@id": "packed.cwl"
+            },
+            "mentions": [
+                {
+                    "@id": "#b368b940-9673-464d-9232-cc1bc1610075"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/crate/1.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ]
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/process/0.1",
+            "@type": "CreativeWork",
+            "name": "Process Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+            "@type": "CreativeWork",
+            "name": "Workflow Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/provenance/0.1",
+            "@type": "CreativeWork",
+            "name": "Provenance Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+            "@type": "CreativeWork",
+            "name": "Workflow RO-Crate",
+            "version": "1.0"
+        },
+        {
+            "@id": "packed.cwl",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow",
+                "HowTo"
+            ],
+            "connection": [
+                {
+                    "@id": "#6032b560-2130-485f-a137-4c2ff96a6898"
+                }
+            ],
+            "hasPart": [
+                {
+                    "@id": "packed.cwl#clt.cwl"
+                }
+            ],
+            "input": [
+                {
+                    "@id": "packed.cwl#main/wf_input_fasta"
+                }
+            ],
+            "name": "packed.cwl",
+            "output": [
+                {
+                    "@id": "packed.cwl#main/wf_output_dir"
+                }
+            ],
+            "programmingLanguage": {
+                "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+            },
+            "step": [
+                {
+                    "@id": "packed.cwl#main/step1"
+                }
+            ]
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+            "@type": "ComputerLanguage",
+            "alternateName": "CWL",
+            "identifier": {
+                "@id": "https://w3id.org/cwl/v1.2/"
+            },
+            "name": "Common Workflow Language",
+            "url": {
+                "@id": "https://www.commonwl.org/"
+            },
+            "version": "v1.2"
+        },
+        {
+            "@id": "packed.cwl#main/wf_input_fasta",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "defaultValue": "file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario2/test.fasta",
+            "name": "wf_input_fasta"
+        },
+        {
+            "@id": "packed.cwl#main/wf_output_dir",
+            "@type": "FormalParameter",
+            "additionalType": "Dataset",
+            "name": "wf_output_dir"
+        },
+        {
+            "@id": "packed.cwl#main/step1",
+            "@type": "HowToStep",
+            "connection": [
+                {
+                    "@id": "#75c73045-76e7-47b8-8142-15bcd00d5c89"
+                }
+            ],
+            "position": "0",
+            "workExample": {
+                "@id": "packed.cwl#clt.cwl"
+            }
+        },
+        {
+            "@id": "packed.cwl#clt.cwl",
+            "@type": "SoftwareApplication",
+            "input": [
+                {
+                    "@id": "packed.cwl#clt.cwl/fasta"
+                },
+                {
+                    "@id": "packed.cwl#clt.cwl/outdir"
+                },
+                {
+                    "@id": "packed.cwl#clt.cwl/script"
+                }
+            ],
+            "name": "clt.cwl",
+            "output": [
+                {
+                    "@id": "packed.cwl#clt.cwl/pc7_features"
+                }
+            ]
+        },
+        {
+            "@id": "packed.cwl#clt.cwl/fasta",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "name": "fasta"
+        },
+        {
+            "@id": "packed.cwl#clt.cwl/outdir",
+            "@type": "FormalParameter",
+            "additionalType": "Text",
+            "name": "outdir"
+        },
+        {
+            "@id": "packed.cwl#clt.cwl/script",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "defaultValue": "file:///Users/renskedewit/Documents/GitHub/runcrate-analysis/scenario2/get_pc7_inputs.py",
+            "name": "script"
+        },
+        {
+            "@id": "packed.cwl#clt.cwl/pc7_features",
+            "@type": "FormalParameter",
+            "additionalType": "Dataset",
+            "name": "pc7_features"
+        },
+        {
+            "@id": "#75c73045-76e7-47b8-8142-15bcd00d5c89",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_fasta"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#clt.cwl/fasta"
+            }
+        },
+        {
+            "@id": "#6032b560-2130-485f-a137-4c2ff96a6898",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#clt.cwl/pc7_features"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#main/wf_output_dir"
+            }
+        },
+        {
+            "@id": "#fc30b916-dd45-4c97-8a71-b5cd4b394115",
+            "@type": "SoftwareApplication",
+            "name": "cwltool 3.1.20221201130942"
+        },
+        {
+            "@id": "#8535b510-fbd1-4a18-8f08-f29db4c9801a",
+            "@type": "OrganizeAction",
+            "instrument": {
+                "@id": "#fc30b916-dd45-4c97-8a71-b5cd4b394115"
+            },
+            "name": "Run of cwltool 3.1.20221201130942",
+            "object": {
+                "@id": "#19a9fb9a-bf3f-42eb-bdb2-79cb04f934a1"
+            },
+            "result": {
+                "@id": "#b368b940-9673-464d-9232-cc1bc1610075"
+            },
+            "startTime": "2023-01-02T19:03:42.480599"
+        },
+        {
+            "@id": "#b368b940-9673-464d-9232-cc1bc1610075",
+            "@type": "CreateAction",
+            "endTime": "2023-01-02T19:03:43.420710",
+            "instrument": {
+                "@id": "packed.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main",
+            "object": [
+                {
+                    "@id": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
+                }
+            ],
+            "result": [
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/"
+                }
+            ],
+            "startTime": "2023-01-02T19:03:42.480798"
+        },
+        {
+            "@id": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8",
+            "@type": "File",
+            "alternateName": "test.fasta",
+            "contentSize": "355",
+            "exampleOfWork": [
+                {
+                    "@id": "packed.cwl#main/wf_input_fasta"
+                },
+                {
+                    "@id": "packed.cwl#clt.cwl/fasta"
+                }
+            ],
+            "sha1": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
+        },
+        {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/",
+            "@type": "Dataset",
+            "dateCreated": "2023-01-02T19:03:43.377411",
+            "exampleOfWork": [
+                {
+                    "@id": "packed.cwl#clt.cwl/pc7_features"
+                },
+                {
+                    "@id": "packed.cwl#main/wf_output_dir"
+                }
+            ],
+            "hasPart": [
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                },
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
+                }
+            ]
+        },
+        {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed",
+            "@type": "File",
+            "contentSize": "1672",
+            "sha1": "2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+        },
+        {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db",
+            "@type": "File",
+            "contentSize": "14913",
+            "sha1": "01d8393f836a79fd05528ecede41c737342076db"
+        },
+        {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d",
+            "@type": "File",
+            "contentSize": "219",
+            "sha1": "e73d55f489827ce73f62b96f6988e0a9691c486d"
+        },
+        {
+            "@id": "#208efab5-afbf-444f-831c-0af79d4801e4",
+            "@type": "CreateAction",
+            "endTime": "2023-01-02T19:03:43.377378",
+            "instrument": {
+                "@id": "packed.cwl#clt.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main/step1",
+            "object": [
+                {
+                    "@id": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
+                },
+                {
+                    "@id": "#pv-main/step1/outdir"
+                },
+                {
+                    "@id": "e228d3883e1770adf02f0a0bcdc259dda6b27e91"
+                }
+            ],
+            "result": [
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/"
+                }
+            ],
+            "startTime": "2023-01-02T19:03:42.543962"
+        },
+        {
+            "@id": "#19a9fb9a-bf3f-42eb-bdb2-79cb04f934a1",
+            "@type": "ControlAction",
+            "instrument": {
+                "@id": "packed.cwl#main/step1"
+            },
+            "name": "orchestrate clt.cwl",
+            "object": {
+                "@id": "#208efab5-afbf-444f-831c-0af79d4801e4"
+            }
+        },
+        {
+            "@id": "#pv-main/step1/outdir",
+            "@type": "PropertyValue",
+            "exampleOfWork": {
+                "@id": "packed.cwl#clt.cwl/outdir"
+            },
+            "name": "outdir",
+            "value": "output_directory_name"
+        },
+        {
+            "@id": "e228d3883e1770adf02f0a0bcdc259dda6b27e91",
+            "@type": "File",
+            "alternateName": "get_pc7_inputs.py",
+            "contentSize": "4622",
+            "exampleOfWork": {
+                "@id": "packed.cwl#clt.cwl/script"
+            },
+            "sha1": "e228d3883e1770adf02f0a0bcdc259dda6b27e91"
+        },
+        {
+            "@id": "primary-job.json",
+            "@type": "File",
+            "encodingFormat": "application/json",
+            "name": "input object document"
+        }
+    ]
+}
