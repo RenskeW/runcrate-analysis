@@ -1,9 +1,0 @@
-PREFIX s: <http://schema.org/>
-PREFIX orcid: <https://orcid.org/>
-
-SELECT ?orcid ?name
-WHERE {
-    ?orcid a s:Person .
-    ?orcid s:name ?name .
-    ?action s:agent ?orcid .
-}
