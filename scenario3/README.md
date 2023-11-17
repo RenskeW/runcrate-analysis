@@ -1,16 +1,25 @@
 # Scenario 3
 
-The same workflow as in Scenario 2B, but now with `DockerRequirement` instead of `SoftwareRequirement.
+Analysis to assess the representation of `DockerRequirement` in `ro-crate-metadata.json`. 
+
+![Workflow graph](./wf_graph.svg)
+
+Single-step workflow. CommandLineTool has 3 parameters:
+
+1. `fasta`: default value defined at WorkflowInputParameter level
+2. `script`: default value defined at CommandLineTool input parameter level
+3. `outdir`: default value defined at **CommandLineTool input parameter level** (in contrast to Scenario2).
+
+Output: `./output_directory_name`
+
+In contrast to Scenario 2, this workflow has a `DockerRequirement` instead of `SoftwareRequirement`.
 
 - Create workflow graph: `cwltool --print-dot wf.cwl | dot -Tsvg > wf_graph.svg`
 - Create CWLProv RO: `cwltool --provenance ./ro wf.cwl`
 - Convert to ROCrate: `runcrate convert ./ro --output ./rocrate`
 
-The Docker image is represented in CWLProv provenance graph. 
+## `DockerRequirement`
 
-The Docker image is not represented in `ro-crate-metadata.json`. 
+The Docker image is represented in `ro-crate-metadata.json` (#L400-407). 
 
-# Commit [7c77b0dabe45e60a2cb87d8320a5c1df592fb477](https://github.com/ResearchObject/runcrate/commit/4e69222e9489da5fe4f16d94a97a2242e2b3009d)
-
-Rerun conversion step: `runcrate convert ./ro --output ./rocrate_v2`
 
