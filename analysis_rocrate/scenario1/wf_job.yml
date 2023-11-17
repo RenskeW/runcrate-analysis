@@ -1,4 +1,0 @@
-wf_input_file:
-  class: File
-  location: ./input_file.tsv
-  format: https://www.iana.org/assignments/media-types/text/tab-separated-values

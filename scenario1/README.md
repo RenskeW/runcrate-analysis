@@ -22,38 +22,38 @@ ORCID ID: [#L249](./ro-crate-metadata.json)
 
 `label` fields for Workflow, WorkflowStep, and CommandLineTool are propagated to [ro-crate-metadata.json](./ro-crate-metadata.json).
 
-Workflow (#L40): #L111
-WorkflowStep (#L76): #L164
-CommandLineTool (#L7): #182
-WorkflowInputParameter (#L48): Not propagated
-WorkflowOutputParameter (#L58): Not propagated
-WorkflowStepInput: Not in test workflow
-CommandInputParameter (#L18): Not propagated
-CommandOutputParameter: (#L31): Not propagated
+- Workflow (#L40): #L111
+- WorkflowStep (#L76): #L164
+- CommandLineTool (#L7): #182
+- WorkflowInputParameter (#L48): Not propagated
+- WorkflowOutputParameter (#L58): Not propagated
+- WorkflowStepInput: Not in test workflow
+- CommandInputParameter (#L18): Not propagated
+- CommandOutputParameter: (#L31): Not propagated
 
 ## `doc`
 
-Workflow (#L41): #L100
-WorkflowStep (#L77): #L163
-CommandLineTool (#L8): #L173
-WorkflowInputParameter (#L49): #L143
-WorkflowOutputParameter (#L59): #L151
-CommandInputParameter (#L19): #L193
-CommandOutputParameter (#L32): #L201 
+- Workflow (#L41): #L100
+- WorkflowStep (#L77): #L163
+- CommandLineTool (#L8): #L173
+- WorkflowInputParameter (#L49): #L143
+- WorkflowOutputParameter (#L59): #L151
+- CommandInputParameter (#L19): #L193
+- CommandOutputParameter (#L32): #L201 
 
 ## `format`
 
-WorkflowInputParameter (#L50): #L144
-WorkflowOutputParameter (#L60): #L152
-CommandInputParameter (#L20): #L194
-CommandOutputParameter (#L33): #L202 
+- WorkflowInputParameter (#L50): #L144
+- WorkflowOutputParameter (#L60): #L152
+- CommandInputParameter (#L20): #L194
+- CommandOutputParameter (#L33): #L202 
 
 ## `intent`
 
-Workflow (#L42-44): Not propagated
-CommandLineTool (#L9-11): #L174-176
+- Workflow (#L42-44): Not propagated
+- CommandLineTool (#L9-11): #L174-176
 
 ## File characteristics
 
-Basename [#L27](./ro/metadata/provenance/primary.cwlprov.ttl): #L292
-Checksum: [#L44](./ro/metadata/provenance/primary.cwlprov.ttl): #L287, #L304
+- Basename [#L27](./ro/metadata/provenance/primary.cwlprov.ttl): #L292
+- Checksum: [#L44](./ro/metadata/provenance/primary.cwlprov.ttl): #L287, #L304
