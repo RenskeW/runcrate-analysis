@@ -1,0 +1,655 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        "https://w3id.org/ro/terms/workflow-run"
+    ],
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/wfrun/process/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/ro/wfrun/workflow/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/ro/wfrun/provenance/0.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ],
+            "datePublished": "2023-11-17T13:14:51+00:00",
+            "hasPart": [
+                {
+                    "@id": "packed.cwl"
+                },
+                {
+                    "@id": "4b22356928446475c8ae5869968c9777374a76e8"
+                },
+                {
+                    "@id": "4ebd7d222d9b6095fa96ee395905ce7f6d415381"
+                },
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/"
+                },
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/da261f1082f318fbda173dc3228d7475433fd886"
+                },
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/bc2f32ad8584e85e6e3b184a6dc565bdd6571821"
+                },
+                {
+                    "@id": "5e026d2a039e60827d3834596a8c30256aa85e57"
+                },
+                {
+                    "@id": "primary-job.json"
+                }
+            ],
+            "mainEntity": {
+                "@id": "packed.cwl"
+            },
+            "mentions": [
+                {
+                    "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/crate/1.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ]
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/process/0.1",
+            "@type": "CreativeWork",
+            "name": "Process Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+            "@type": "CreativeWork",
+            "name": "Workflow Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/provenance/0.1",
+            "@type": "CreativeWork",
+            "name": "Provenance Run Crate",
+            "version": "0.1"
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+            "@type": "CreativeWork",
+            "name": "Workflow RO-Crate",
+            "version": "1.0"
+        },
+        {
+            "@id": "packed.cwl",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow",
+                "HowTo"
+            ],
+            "hasPart": [
+                {
+                    "@id": "packed.cwl#date.cwl"
+                },
+                {
+                    "@id": "packed.cwl#main/echo2_step/run"
+                },
+                {
+                    "@id": "packed.cwl#echo.cwl"
+                }
+            ],
+            "input": [
+                {
+                    "@id": "packed.cwl#main/wf_input_array"
+                },
+                {
+                    "@id": "packed.cwl#main/wf_input_dir"
+                },
+                {
+                    "@id": "packed.cwl#main/wf_input_file"
+                },
+                {
+                    "@id": "packed.cwl#main/wf_input_string"
+                }
+            ],
+            "name": "packed.cwl",
+            "output": [],
+            "programmingLanguage": {
+                "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+            },
+            "step": [
+                {
+                    "@id": "packed.cwl#main/date2_step"
+                },
+                {
+                    "@id": "packed.cwl#main/date_step"
+                },
+                {
+                    "@id": "packed.cwl#main/echo2_step"
+                },
+                {
+                    "@id": "packed.cwl#main/echo_step"
+                }
+            ]
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+            "@type": "ComputerLanguage",
+            "alternateName": "CWL",
+            "identifier": {
+                "@id": "https://w3id.org/cwl/v1.2/"
+            },
+            "name": "Common Workflow Language",
+            "url": {
+                "@id": "https://www.commonwl.org/"
+            },
+            "version": "v1.2"
+        },
+        {
+            "@id": "packed.cwl#main/wf_input_array",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "multipleValues": "True",
+            "name": "wf_input_array"
+        },
+        {
+            "@id": "packed.cwl#main/wf_input_dir",
+            "@type": "FormalParameter",
+            "additionalType": "Dataset",
+            "name": "wf_input_dir"
+        },
+        {
+            "@id": "packed.cwl#main/wf_input_file",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "name": "wf_input_file"
+        },
+        {
+            "@id": "packed.cwl#main/wf_input_string",
+            "@type": "FormalParameter",
+            "additionalType": "Text",
+            "name": "wf_input_string"
+        },
+        {
+            "@id": "packed.cwl#main/date2_step",
+            "@type": "HowToStep",
+            "connection": [
+                {
+                    "@id": "#729481f9-8069-4efe-ab02-5e868320c9a1"
+                }
+            ],
+            "position": "0",
+            "workExample": {
+                "@id": "packed.cwl#date.cwl"
+            }
+        },
+        {
+            "@id": "packed.cwl#date.cwl",
+            "@type": "SoftwareApplication",
+            "input": [
+                {
+                    "@id": "packed.cwl#date.cwl/file"
+                }
+            ],
+            "memoryRequirements": "500 MiB",
+            "name": "date.cwl",
+            "output": []
+        },
+        {
+            "@id": "packed.cwl#date.cwl/file",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "name": "file"
+        },
+        {
+            "@id": "packed.cwl#main/date_step",
+            "@type": "HowToStep",
+            "connection": [
+                {
+                    "@id": "#43efbd79-38fc-4619-bcea-b4062c2d2663"
+                }
+            ],
+            "position": "1",
+            "workExample": {
+                "@id": "packed.cwl#date.cwl"
+            }
+        },
+        {
+            "@id": "packed.cwl#main/echo2_step",
+            "@type": "HowToStep",
+            "connection": [
+                {
+                    "@id": "#28a1250e-5578-4e9d-a5ff-38b11b129372"
+                }
+            ],
+            "position": "2",
+            "workExample": {
+                "@id": "packed.cwl#main/echo2_step/run"
+            }
+        },
+        {
+            "@id": "packed.cwl#main/echo2_step/run",
+            "@type": "SoftwareApplication",
+            "input": [
+                {
+                    "@id": "packed.cwl#main/echo2_step/run/clt_str_input"
+                }
+            ],
+            "name": "main/echo2_step/run",
+            "output": []
+        },
+        {
+            "@id": "packed.cwl#main/echo2_step/run/clt_str_input",
+            "@type": "FormalParameter",
+            "additionalType": "Text",
+            "name": "clt_str_input"
+        },
+        {
+            "@id": "packed.cwl#main/echo_step",
+            "@type": "HowToStep",
+            "connection": [
+                {
+                    "@id": "#346b894f-eae3-44df-bcde-5c170f86cd35"
+                },
+                {
+                    "@id": "#8381cbda-fc2b-4917-9876-f0c2aa492323"
+                }
+            ],
+            "position": "3",
+            "workExample": {
+                "@id": "packed.cwl#echo.cwl"
+            }
+        },
+        {
+            "@id": "packed.cwl#echo.cwl",
+            "@type": "SoftwareApplication",
+            "input": [
+                {
+                    "@id": "packed.cwl#echo.cwl/input_dir"
+                },
+                {
+                    "@id": "packed.cwl#echo.cwl/input_file"
+                }
+            ],
+            "name": "echo.cwl",
+            "output": []
+        },
+        {
+            "@id": "packed.cwl#echo.cwl/input_dir",
+            "@type": "FormalParameter",
+            "additionalType": "Dataset",
+            "name": "input_dir"
+        },
+        {
+            "@id": "packed.cwl#echo.cwl/input_file",
+            "@type": "FormalParameter",
+            "additionalType": "File",
+            "name": "input_file"
+        },
+        {
+            "@id": "#729481f9-8069-4efe-ab02-5e868320c9a1",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_array"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#date.cwl/file"
+            }
+        },
+        {
+            "@id": "#43efbd79-38fc-4619-bcea-b4062c2d2663",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_file"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#date.cwl/file"
+            }
+        },
+        {
+            "@id": "#28a1250e-5578-4e9d-a5ff-38b11b129372",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_string"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#main/echo2_step/run/clt_str_input"
+            }
+        },
+        {
+            "@id": "#346b894f-eae3-44df-bcde-5c170f86cd35",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_dir"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#echo.cwl/input_dir"
+            }
+        },
+        {
+            "@id": "#8381cbda-fc2b-4917-9876-f0c2aa492323",
+            "@type": "ParameterConnection",
+            "sourceParameter": {
+                "@id": "packed.cwl#main/wf_input_file"
+            },
+            "targetParameter": {
+                "@id": "packed.cwl#echo.cwl/input_file"
+            }
+        },
+        {
+            "@id": "#184a2daf-cc8a-451a-a3c8-d98009ea8358",
+            "@type": "SoftwareApplication",
+            "name": "cwltool 3.1.20220802125926"
+        },
+        {
+            "@id": "#3aedd033-ca76-4f17-907e-63b887eacc5c",
+            "@type": "OrganizeAction",
+            "instrument": {
+                "@id": "#184a2daf-cc8a-451a-a3c8-d98009ea8358"
+            },
+            "name": "Run of cwltool 3.1.20220802125926",
+            "object": [
+                {
+                    "@id": "#2d105d77-f17a-48bb-b662-f81332193a8e"
+                },
+                {
+                    "@id": "#0b4deaf1-20e3-42d5-a1fe-75ea908b7359"
+                },
+                {
+                    "@id": "#36b9699f-8481-4ded-9352-143db90d2041"
+                },
+                {
+                    "@id": "#c4a87818-34de-4fef-8f19-394ed235add3"
+                }
+            ],
+            "result": {
+                "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712"
+            },
+            "startTime": "2023-01-03T18:09:23.192514"
+        },
+        {
+            "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:24.461647",
+            "instrument": {
+                "@id": "packed.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main",
+            "object": [
+                {
+                    "@id": "#pv-main/wf_input_array"
+                },
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/"
+                },
+                {
+                    "@id": "5e026d2a039e60827d3834596a8c30256aa85e57"
+                },
+                {
+                    "@id": "#pv-main/wf_input_string"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:23.193318"
+        },
+        {
+            "@id": "4b22356928446475c8ae5869968c9777374a76e8",
+            "@type": "File",
+            "alternateName": "7mb7.cif",
+            "contentSize": "508297",
+            "exampleOfWork": {
+                "@id": "packed.cwl#date.cwl/file"
+            },
+            "sha1": "4b22356928446475c8ae5869968c9777374a76e8"
+        },
+        {
+            "@id": "4ebd7d222d9b6095fa96ee395905ce7f6d415381",
+            "@type": "File",
+            "alternateName": "7zxf.cif",
+            "contentSize": "1984391",
+            "exampleOfWork": {
+                "@id": "packed.cwl#date.cwl/file"
+            },
+            "sha1": "4ebd7d222d9b6095fa96ee395905ce7f6d415381"
+        },
+        {
+            "@id": "#pv-main/wf_input_array",
+            "@type": "PropertyValue",
+            "exampleOfWork": {
+                "@id": "packed.cwl#main/wf_input_array"
+            },
+            "name": "wf_input_array",
+            "value": [
+                {
+                    "@id": "4b22356928446475c8ae5869968c9777374a76e8"
+                },
+                {
+                    "@id": "4ebd7d222d9b6095fa96ee395905ce7f6d415381"
+                }
+            ]
+        },
+        {
+            "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/",
+            "@type": "Dataset",
+            "exampleOfWork": [
+                {
+                    "@id": "packed.cwl#main/wf_input_dir"
+                },
+                {
+                    "@id": "packed.cwl#echo.cwl/input_dir"
+                }
+            ],
+            "hasPart": [
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/da261f1082f318fbda173dc3228d7475433fd886"
+                },
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/bc2f32ad8584e85e6e3b184a6dc565bdd6571821"
+                }
+            ]
+        },
+        {
+            "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/da261f1082f318fbda173dc3228d7475433fd886",
+            "@type": "File",
+            "contentSize": "304628",
+            "sha1": "da261f1082f318fbda173dc3228d7475433fd886"
+        },
+        {
+            "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/bc2f32ad8584e85e6e3b184a6dc565bdd6571821",
+            "@type": "File",
+            "contentSize": "976941",
+            "sha1": "bc2f32ad8584e85e6e3b184a6dc565bdd6571821"
+        },
+        {
+            "@id": "5e026d2a039e60827d3834596a8c30256aa85e57",
+            "@type": "File",
+            "alternateName": "sabdab_summary_all_20220527.tsv",
+            "contentSize": "4598025",
+            "exampleOfWork": [
+                {
+                    "@id": "packed.cwl#date.cwl/file"
+                },
+                {
+                    "@id": "packed.cwl#main/wf_input_file"
+                },
+                {
+                    "@id": "packed.cwl#echo.cwl/input_file"
+                }
+            ],
+            "sha1": "5e026d2a039e60827d3834596a8c30256aa85e57"
+        },
+        {
+            "@id": "#pv-main/wf_input_string",
+            "@type": "PropertyValue",
+            "exampleOfWork": {
+                "@id": "packed.cwl#main/wf_input_string"
+            },
+            "name": "wf_input_string",
+            "value": "wf_input_string_value"
+        },
+        {
+            "@id": "#be5bff51-07db-431c-8acb-ac63690215b7",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:23.598752",
+            "instrument": {
+                "@id": "packed.cwl#date.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main/date_step",
+            "object": [
+                {
+                    "@id": "5e026d2a039e60827d3834596a8c30256aa85e57"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:23.529254"
+        },
+        {
+            "@id": "#2d105d77-f17a-48bb-b662-f81332193a8e",
+            "@type": "ControlAction",
+            "instrument": {
+                "@id": "packed.cwl#main/date_step"
+            },
+            "name": "orchestrate date.cwl",
+            "object": {
+                "@id": "#be5bff51-07db-431c-8acb-ac63690215b7"
+            }
+        },
+        {
+            "@id": "#878fbfe8-4ec5-435c-9f7c-a253d8e09b2f",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:23.919038",
+            "instrument": {
+                "@id": "packed.cwl#date.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main/date2_step",
+            "object": [
+                {
+                    "@id": "4b22356928446475c8ae5869968c9777374a76e8"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:23.632501"
+        },
+        {
+            "@id": "#0b4deaf1-20e3-42d5-a1fe-75ea908b7359",
+            "@type": "ControlAction",
+            "instrument": {
+                "@id": "packed.cwl#main/date2_step"
+            },
+            "name": "orchestrate date.cwl",
+            "object": [
+                {
+                    "@id": "#878fbfe8-4ec5-435c-9f7c-a253d8e09b2f"
+                },
+                {
+                    "@id": "#73f746d1-c15a-4924-ab4b-2162c12fb77d"
+                }
+            ]
+        },
+        {
+            "@id": "#73f746d1-c15a-4924-ab4b-2162c12fb77d",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:24.134651",
+            "instrument": {
+                "@id": "packed.cwl#date.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main/date2_step_2",
+            "object": [
+                {
+                    "@id": "4ebd7d222d9b6095fa96ee395905ce7f6d415381"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:24.058961"
+        },
+        {
+            "@id": "#0dba8e6d-b4e3-49f4-a3d1-c143c6742937",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:24.216133",
+            "instrument": {
+                "@id": "packed.cwl#main/echo2_step/run"
+            },
+            "name": "Run of workflow/packed.cwl#main/echo2_step",
+            "object": [
+                {
+                    "@id": "#pv-main/echo2_step/clt_str_input"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:24.162564"
+        },
+        {
+            "@id": "#36b9699f-8481-4ded-9352-143db90d2041",
+            "@type": "ControlAction",
+            "instrument": {
+                "@id": "packed.cwl#main/echo2_step"
+            },
+            "name": "orchestrate main/echo2_step/run",
+            "object": {
+                "@id": "#0dba8e6d-b4e3-49f4-a3d1-c143c6742937"
+            }
+        },
+        {
+            "@id": "#pv-main/echo2_step/clt_str_input",
+            "@type": "PropertyValue",
+            "exampleOfWork": {
+                "@id": "packed.cwl#main/echo2_step/run/clt_str_input"
+            },
+            "name": "clt_str_input",
+            "value": "wf_input_string_value"
+        },
+        {
+            "@id": "#fbf043d7-b156-42e4-bb62-0d805b8f9b57",
+            "@type": "CreateAction",
+            "endTime": "2023-01-03T18:09:24.411485",
+            "instrument": {
+                "@id": "packed.cwl#echo.cwl"
+            },
+            "name": "Run of workflow/packed.cwl#main/echo_step",
+            "object": [
+                {
+                    "@id": "a15b2b245976f28db9229bc47f67bba9ec9454d3/"
+                },
+                {
+                    "@id": "5e026d2a039e60827d3834596a8c30256aa85e57"
+                }
+            ],
+            "result": [],
+            "startTime": "2023-01-03T18:09:24.323259"
+        },
+        {
+            "@id": "#c4a87818-34de-4fef-8f19-394ed235add3",
+            "@type": "ControlAction",
+            "instrument": {
+                "@id": "packed.cwl#main/echo_step"
+            },
+            "name": "orchestrate echo.cwl",
+            "object": {
+                "@id": "#fbf043d7-b156-42e4-bb62-0d805b8f9b57"
+            }
+        },
+        {
+            "@id": "primary-job.json",
+            "@type": "File",
+            "encodingFormat": "application/json",
+            "name": "input object document"
+        }
+    ]
+}
