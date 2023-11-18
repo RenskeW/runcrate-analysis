@@ -4,7 +4,7 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2023-11-17T14:40:31+00:00",
+            "datePublished": "2023-11-18T23:10:47+00:00",
             "hasPart": [
                 {
                     "@id": "README.md"
@@ -50,22 +50,26 @@
         {
             "@id": "scenario1/",
             "@type": "Dataset",
+            "description": "Analyze representation of CWL metadata fields and human agent",
             "name": "scenario1"
         },
         {
             "@id": "scenario2/",
             "@type": "Dataset",
-            "name": "scenario2_a"
+            "description": "Analyze representation of SoftwareRequirement",
+            "name": "scenario2"
         },
         {
             "@id": "scenario3/",
             "@type": "Dataset",
+            "description": "Analyze representation of DockerRequirement",
             "name": "scenario3"
         },
         {
             "@id": "scenario4/",
             "@type": "Dataset",
-            "name": "scenario4_a"
+            "description": "Analyze representation of input parameter values and ResourceRequirement",
+            "name": "scenario4"
         },
         {
             "@id": "https://orcid.org/0000-0003-0902-0086",
