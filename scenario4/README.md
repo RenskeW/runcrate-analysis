@@ -4,7 +4,7 @@ Analysis the representation of `String`, `File`, `Directory` and `File array` in
 
 ![Workflow graph](./wf_graph.svg)
 
-Workflow with 4 inputs of type string, File, File array, and Directory. 1 CommandLineTool has a `ResourceRequirement` ([#L13](./packed.cwl)).
+Workflow with 4 inputs of type string, File, File array, and Directory. 1 CommandLineTool has a `ResourceRequirement` ([#L13](./rocrate/packed.cwl)).
 
 - Create workflow graph: `cwltool --print-dot wf.cwl | dot -Tsvg > wf_graph.svg`
 - Create CWLProv RO: `cwltool --provenance ./ro wf.cwl wf_job.yml`
@@ -18,8 +18,8 @@ Entity wf:main/date2_step_2 not found in Provenance<urn:uuid:a5d9245c-e21c-4898-
 
 ## ResourceRequirement
 
-`ramMin`: [#L211](./rocrate/ro-crate-metadata.json)
-`coresMin`: not in `ro-crate-metadata.json`. 
+- `ramMin`: [#L211](./rocrate/ro-crate-metadata.json)
+- `coresMin`: not in `ro-crate-metadata.json`. 
 
 ## Representation of input parameter values
 

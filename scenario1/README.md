@@ -15,14 +15,14 @@ As an example, we use a simple CWL workflow comprising a single step, one input 
 
 ## Human agent
 
-Name: [#L251](./ro-crate-metadata.json) 
-ORCID ID: [#L249](./ro-crate-metadata.json) 
+- Name: [#L251](./rocrate/ro-crate-metadata.json) 
+- ORCID ID: [#L249](./rocrate/ro-crate-metadata.json) 
 
 ## `label`
 
-`label` fields for Workflow, WorkflowStep, and CommandLineTool are propagated to [ro-crate-metadata.json](./ro-crate-metadata.json).
+`label` fields for Workflow, WorkflowStep, and CommandLineTool are propagated to [ro-crate-metadata.json](./rocrate/ro-crate-metadata.json).
 
-- Workflow (#L40): #L111
+- Workflow ([#L40](./rocrate/packed.cwl)): #L111
 - WorkflowStep (#L76): #L164
 - CommandLineTool (#L7): #182
 - WorkflowInputParameter (#L48): Not propagated
@@ -33,7 +33,7 @@ ORCID ID: [#L249](./ro-crate-metadata.json)
 
 ## `doc`
 
-- Workflow (#L41): #L100
+- Workflow ([#L41](./rocrate/packed.cwl)): #L100
 - WorkflowStep (#L77): #L163
 - CommandLineTool (#L8): #L173
 - WorkflowInputParameter (#L49): #L143
@@ -43,14 +43,14 @@ ORCID ID: [#L249](./ro-crate-metadata.json)
 
 ## `format`
 
-- WorkflowInputParameter (#L50): #L144
+- WorkflowInputParameter ([#L50](./rocrate/packed.cwl)): #L144
 - WorkflowOutputParameter (#L60): #L152
 - CommandInputParameter (#L20): #L194
 - CommandOutputParameter (#L33): #L202 
 
 ## `intent`
 
-- Workflow (#L42-44): Not propagated
+- Workflow ([#L42-44](./rocrate/packed.cwl)): Not propagated
 - CommandLineTool (#L9-11): #L174-176
 
 ## File characteristics
