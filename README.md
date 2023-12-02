@@ -1,4 +1,4 @@
-# Analysis of runcrate 0.4.0
+# Analysis of runcrate 0.5.0
 
 This repository documents the analysis of Workflow Run RO-Crates converted from CWLProv RO Bundles using [runcrate](https://github.com/ResearchObject/runcrate). 
 
