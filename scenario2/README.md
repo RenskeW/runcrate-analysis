@@ -18,4 +18,4 @@ Output: `./output_directory_name`
 
 ## SoftwareRequirement
 
-`SoftwareRequirement` is not represented in `ro-crate-metadata.json`. 
+`SoftwareRequirement` is represented in `ro-crate-metadata.json` (#L209).

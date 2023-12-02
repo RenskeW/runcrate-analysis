@@ -20,6 +20,6 @@ In contrast to Scenario 2, this workflow has a `DockerRequirement` instead of `S
 
 ## `DockerRequirement`
 
-The Docker image is represented in `ro-crate-metadata.json` (#L400-407). 
+The Docker image is represented in `ro-crate-metadata.json` (#L400-407).
 
 

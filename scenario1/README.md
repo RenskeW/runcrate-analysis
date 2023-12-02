@@ -1,6 +1,6 @@
 # Scenario 1
 
-Analysis to assess if CWL metadata fields (`label`, `doc`, `intent`, `format`) are propagated to RO-Crate RDF (`ro-crate-metadata.json`) by runcrate 0.4.0. In addition, representation of the human agent that executed the workflow is checked, as well as basename and checksum of the input and output files.
+Analysis to assess if CWL metadata fields (`label`, `doc`, `intent`, `format`) are propagated to RO-Crate RDF (`ro-crate-metadata.json`) by runcrate 0.5.0. In addition, representation of the human agent that executed the workflow is checked, as well as basename and checksum of the input and output files.
 
 ![CWL metadata fields](./cwl_metadata_fields.png)
 

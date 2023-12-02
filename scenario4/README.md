@@ -19,7 +19,7 @@ Entity wf:main/date2_step_2 not found in Provenance<urn:uuid:a5d9245c-e21c-4898-
 ## ResourceRequirement
 
 - `ramMin`: [#L211](./rocrate/ro-crate-metadata.json)
-- `coresMin`: not in `ro-crate-metadata.json`. 
+- `coresMin`: not in `ro-crate-metadata.json`.
 
 ## Representation of input parameter values
 

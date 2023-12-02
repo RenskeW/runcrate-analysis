@@ -21,7 +21,7 @@
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
             ],
-            "datePublished": "2023-11-17T12:50:07+00:00",
+            "datePublished": "2023-12-02T21:23:52+00:00",
             "hasPart": [
                 {
                     "@id": "packed.cwl"
@@ -33,10 +33,10 @@
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/"
                 },
                 {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
                 },
                 {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
                 },
                 {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
@@ -53,7 +53,7 @@
             },
             "mentions": [
                 {
-                    "@id": "#b368b940-9673-464d-9232-cc1bc1610075"
+                    "@id": "#3b248d0f-41a8-4fa8-a2e0-daf60acf6d99"
                 }
             ]
         },
@@ -106,7 +106,7 @@
             ],
             "connection": [
                 {
-                    "@id": "#6032b560-2130-485f-a137-4c2ff96a6898"
+                    "@id": "#ac3120d5-7208-47cc-aef8-809b3aa6b646"
                 }
             ],
             "hasPart": [
@@ -165,13 +165,21 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#75c73045-76e7-47b8-8142-15bcd00d5c89"
+                    "@id": "#077cf5a9-abf6-40ea-a596-d5b13d279707"
                 }
             ],
             "position": "0",
             "workExample": {
                 "@id": "packed.cwl#clt.cwl"
             }
+        },
+        {
+            "@id": "https://anaconda.org/conda-forge/numpy",
+            "@type": "SoftwareApplication",
+            "name": "numpy",
+            "softwareVersion": [
+                "1.21.4"
+            ]
         },
         {
             "@id": "packed.cwl#clt.cwl",
@@ -187,10 +195,18 @@
                     "@id": "packed.cwl#clt.cwl/script"
                 }
             ],
+            "mainEntity": {
+                "@id": "https://anaconda.org/conda-forge/numpy"
+            },
             "name": "clt.cwl",
             "output": [
                 {
                     "@id": "packed.cwl#clt.cwl/pc7_features"
+                }
+            ],
+            "softwareRequirements": [
+                {
+                    "@id": "https://anaconda.org/conda-forge/numpy"
                 }
             ]
         },
@@ -220,7 +236,7 @@
             "name": "pc7_features"
         },
         {
-            "@id": "#75c73045-76e7-47b8-8142-15bcd00d5c89",
+            "@id": "#077cf5a9-abf6-40ea-a596-d5b13d279707",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_fasta"
@@ -230,7 +246,7 @@
             }
         },
         {
-            "@id": "#6032b560-2130-485f-a137-4c2ff96a6898",
+            "@id": "#ac3120d5-7208-47cc-aef8-809b3aa6b646",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#clt.cwl/pc7_features"
@@ -240,27 +256,27 @@
             }
         },
         {
-            "@id": "#fc30b916-dd45-4c97-8a71-b5cd4b394115",
+            "@id": "#ee07ff66-71a3-413d-909b-a4a33e6b18d8",
             "@type": "SoftwareApplication",
             "name": "cwltool 3.1.20221201130942"
         },
         {
-            "@id": "#8535b510-fbd1-4a18-8f08-f29db4c9801a",
+            "@id": "#81954753-15bc-4d78-b66b-75f8be9eb176",
             "@type": "OrganizeAction",
             "instrument": {
-                "@id": "#fc30b916-dd45-4c97-8a71-b5cd4b394115"
+                "@id": "#ee07ff66-71a3-413d-909b-a4a33e6b18d8"
             },
             "name": "Run of cwltool 3.1.20221201130942",
             "object": {
-                "@id": "#19a9fb9a-bf3f-42eb-bdb2-79cb04f934a1"
+                "@id": "#dd93b5c9-0614-4313-abfd-513395415f77"
             },
             "result": {
-                "@id": "#b368b940-9673-464d-9232-cc1bc1610075"
+                "@id": "#3b248d0f-41a8-4fa8-a2e0-daf60acf6d99"
             },
             "startTime": "2023-01-02T19:03:42.480599"
         },
         {
-            "@id": "#b368b940-9673-464d-9232-cc1bc1610075",
+            "@id": "#3b248d0f-41a8-4fa8-a2e0-daf60acf6d99",
             "@type": "CreateAction",
             "endTime": "2023-01-02T19:03:43.420710",
             "instrument": {
@@ -300,29 +316,23 @@
             "dateCreated": "2023-01-02T19:03:43.377411",
             "exampleOfWork": [
                 {
-                    "@id": "packed.cwl#clt.cwl/pc7_features"
+                    "@id": "packed.cwl#main/wf_output_dir"
                 },
                 {
-                    "@id": "packed.cwl#main/wf_output_dir"
+                    "@id": "packed.cwl#clt.cwl/pc7_features"
                 }
             ],
             "hasPart": [
                 {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
                 },
                 {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
                 },
                 {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
                 }
             ]
-        },
-        {
-            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed",
-            "@type": "File",
-            "contentSize": "1672",
-            "sha1": "2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
         },
         {
             "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db",
@@ -331,13 +341,19 @@
             "sha1": "01d8393f836a79fd05528ecede41c737342076db"
         },
         {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed",
+            "@type": "File",
+            "contentSize": "1672",
+            "sha1": "2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
+        },
+        {
             "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d",
             "@type": "File",
             "contentSize": "219",
             "sha1": "e73d55f489827ce73f62b96f6988e0a9691c486d"
         },
         {
-            "@id": "#208efab5-afbf-444f-831c-0af79d4801e4",
+            "@id": "#44d19e4c-3614-4f5d-b148-3f339854fc50",
             "@type": "CreateAction",
             "endTime": "2023-01-02T19:03:43.377378",
             "instrument": {
@@ -363,14 +379,14 @@
             "startTime": "2023-01-02T19:03:42.543962"
         },
         {
-            "@id": "#19a9fb9a-bf3f-42eb-bdb2-79cb04f934a1",
+            "@id": "#dd93b5c9-0614-4313-abfd-513395415f77",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/step1"
             },
             "name": "orchestrate clt.cwl",
             "object": {
-                "@id": "#208efab5-afbf-444f-831c-0af79d4801e4"
+                "@id": "#44d19e4c-3614-4f5d-b148-3f339854fc50"
             }
         },
         {

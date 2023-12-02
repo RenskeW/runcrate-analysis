@@ -21,7 +21,7 @@
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
             ],
-            "datePublished": "2023-11-13T18:32:56+00:00",
+            "datePublished": "2023-12-02T21:20:32+00:00",
             "hasPart": [
                 {
                     "@id": "packed.cwl"
@@ -41,7 +41,7 @@
             },
             "mentions": [
                 {
-                    "@id": "#8b46c287-f12c-48e2-8a54-fecc640903c7"
+                    "@id": "#283af814-a85d-4813-b420-fa26af3c6d88"
                 }
             ]
         },
@@ -94,7 +94,7 @@
             ],
             "connection": [
                 {
-                    "@id": "#3e87b807-5c94-41f8-9a5a-1393421340e0"
+                    "@id": "#d0796fd7-cd17-4234-ab82-693472001639"
                 }
             ],
             "description": "WF_doc",
@@ -157,7 +157,7 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#882aa512-95bd-40dd-a70c-c2fc1f0dd3e6"
+                    "@id": "#26eacf0b-124b-4949-a619-a72a553b4dba"
                 }
             ],
             "description": "wf_step_doc",
@@ -203,7 +203,7 @@
             "name": "clt_output_file"
         },
         {
-            "@id": "#882aa512-95bd-40dd-a70c-c2fc1f0dd3e6",
+            "@id": "#26eacf0b-124b-4949-a619-a72a553b4dba",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_file"
@@ -213,7 +213,7 @@
             }
         },
         {
-            "@id": "#3e87b807-5c94-41f8-9a5a-1393421340e0",
+            "@id": "#d0796fd7-cd17-4234-ab82-693472001639",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#echo_file_path.cwl/clt_output_file"
@@ -223,25 +223,25 @@
             }
         },
         {
-            "@id": "#6b87e9d9-e48f-4c5a-bdd5-951a56c3e2da",
+            "@id": "#f3621cf3-4b3e-4b06-8cec-b8e6e4a82f82",
             "@type": "SoftwareApplication",
             "name": "cwltool 3.1.20220802125926"
         },
         {
-            "@id": "#200d69a2-cfbb-4582-884d-f6676f7d1e30",
+            "@id": "#52262aea-9803-43ad-a49e-cd6590f47761",
             "@type": "OrganizeAction",
             "agent": {
                 "@id": "https://orcid.org/0000-0003-0902-0086"
             },
             "instrument": {
-                "@id": "#6b87e9d9-e48f-4c5a-bdd5-951a56c3e2da"
+                "@id": "#f3621cf3-4b3e-4b06-8cec-b8e6e4a82f82"
             },
             "name": "Run of cwltool 3.1.20220802125926",
             "object": {
-                "@id": "#3742e77a-74ae-42a5-96cb-707570798bc7"
+                "@id": "#46ae783c-8ebd-4008-acba-d6438d1cf036"
             },
             "result": {
-                "@id": "#8b46c287-f12c-48e2-8a54-fecc640903c7"
+                "@id": "#283af814-a85d-4813-b420-fa26af3c6d88"
             },
             "startTime": "2023-01-02T16:33:42.985384"
         },
@@ -251,7 +251,7 @@
             "name": "Renske de Wit"
         },
         {
-            "@id": "#8b46c287-f12c-48e2-8a54-fecc640903c7",
+            "@id": "#283af814-a85d-4813-b420-fa26af3c6d88",
             "@type": "CreateAction",
             "endTime": "2023-01-02T16:33:43.075496",
             "instrument": {
@@ -304,7 +304,7 @@
             "sha1": "7cd19fa17a0298cae6d306be6593de6ff1aea0ac"
         },
         {
-            "@id": "#222bb5e9-8450-4e87-99d7-75340209866a",
+            "@id": "#af5b3193-e784-41c6-b04f-cd092d3aaf8b",
             "@type": "CreateAction",
             "endTime": "2023-01-02T16:33:43.059503",
             "instrument": {
@@ -324,14 +324,14 @@
             "startTime": "2023-01-02T16:33:43.033561"
         },
         {
-            "@id": "#3742e77a-74ae-42a5-96cb-707570798bc7",
+            "@id": "#46ae783c-8ebd-4008-acba-d6438d1cf036",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/wf_step"
             },
             "name": "orchestrate echo_file_path.cwl",
             "object": {
-                "@id": "#222bb5e9-8450-4e87-99d7-75340209866a"
+                "@id": "#af5b3193-e784-41c6-b04f-cd092d3aaf8b"
             }
         },
         {

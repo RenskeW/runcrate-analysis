@@ -21,7 +21,7 @@
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
             ],
-            "datePublished": "2023-11-17T13:07:19+00:00",
+            "datePublished": "2023-12-02T21:27:07+00:00",
             "hasPart": [
                 {
                     "@id": "packed.cwl"
@@ -33,13 +33,13 @@
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/"
                 },
                 {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                },
+                {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
                 },
                 {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
-                },
-                {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
                 },
                 {
                     "@id": "e228d3883e1770adf02f0a0bcdc259dda6b27e91"
@@ -53,7 +53,7 @@
             },
             "mentions": [
                 {
-                    "@id": "#aba1cf32-d720-4651-bedb-f77d03a87550"
+                    "@id": "#ac132154-b6a4-458c-ac8a-38b7b0c39327"
                 }
             ]
         },
@@ -106,7 +106,7 @@
             ],
             "connection": [
                 {
-                    "@id": "#24b71feb-7508-4b8f-a317-69f070728910"
+                    "@id": "#8473a348-1c01-4ce5-be63-41cfec3161ca"
                 }
             ],
             "hasPart": [
@@ -165,7 +165,7 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#7be884a6-6626-42a4-b778-80104137cc59"
+                    "@id": "#2a693be1-25fa-4dbf-be5e-d698fa6713b2"
                 }
             ],
             "position": "0",
@@ -221,7 +221,7 @@
             "name": "pc7_features"
         },
         {
-            "@id": "#7be884a6-6626-42a4-b778-80104137cc59",
+            "@id": "#2a693be1-25fa-4dbf-be5e-d698fa6713b2",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_fasta"
@@ -231,7 +231,7 @@
             }
         },
         {
-            "@id": "#24b71feb-7508-4b8f-a317-69f070728910",
+            "@id": "#8473a348-1c01-4ce5-be63-41cfec3161ca",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#clt.cwl/pc7_features"
@@ -241,27 +241,27 @@
             }
         },
         {
-            "@id": "#fa2e7e44-d0b6-4328-9c01-a8ee81aa96f7",
+            "@id": "#822dd8cf-acb2-44af-b829-eccf40f6fcf0",
             "@type": "SoftwareApplication",
             "name": "cwltool 3.1.20221201130942"
         },
         {
-            "@id": "#5cd15b38-d671-48bc-b6f8-66f93fe19820",
+            "@id": "#8eb3e00e-687f-43da-b116-13a11904d94b",
             "@type": "OrganizeAction",
             "instrument": {
-                "@id": "#fa2e7e44-d0b6-4328-9c01-a8ee81aa96f7"
+                "@id": "#822dd8cf-acb2-44af-b829-eccf40f6fcf0"
             },
             "name": "Run of cwltool 3.1.20221201130942",
             "object": {
-                "@id": "#0bc16564-910c-4c13-95f0-f3dbab06781f"
+                "@id": "#1b88a235-07ec-4ae3-88ce-ce0ba6984a6b"
             },
             "result": {
-                "@id": "#aba1cf32-d720-4651-bedb-f77d03a87550"
+                "@id": "#ac132154-b6a4-458c-ac8a-38b7b0c39327"
             },
             "startTime": "2023-01-02T19:37:10.352699"
         },
         {
-            "@id": "#aba1cf32-d720-4651-bedb-f77d03a87550",
+            "@id": "#ac132154-b6a4-458c-ac8a-38b7b0c39327",
             "@type": "CreateAction",
             "endTime": "2023-01-02T19:37:25.058925",
             "instrument": {
@@ -287,10 +287,10 @@
             "contentSize": "355",
             "exampleOfWork": [
                 {
-                    "@id": "packed.cwl#clt.cwl/fasta"
+                    "@id": "packed.cwl#main/wf_input_fasta"
                 },
                 {
-                    "@id": "packed.cwl#main/wf_input_fasta"
+                    "@id": "packed.cwl#clt.cwl/fasta"
                 }
             ],
             "sha1": "ac39022d2a46ce20025b134101fdf0aae3b7cbe8"
@@ -301,23 +301,29 @@
             "dateCreated": "2023-01-02T19:37:22.781658",
             "exampleOfWork": [
                 {
-                    "@id": "packed.cwl#clt.cwl/pc7_features"
+                    "@id": "packed.cwl#main/wf_output_dir"
                 },
                 {
-                    "@id": "packed.cwl#main/wf_output_dir"
+                    "@id": "packed.cwl#clt.cwl/pc7_features"
                 }
             ],
             "hasPart": [
+                {
+                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
+                },
                 {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d"
                 },
                 {
                     "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
-                },
-                {
-                    "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db"
                 }
             ]
+        },
+        {
+            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db",
+            "@type": "File",
+            "contentSize": "14913",
+            "sha1": "01d8393f836a79fd05528ecede41c737342076db"
         },
         {
             "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/e73d55f489827ce73f62b96f6988e0a9691c486d",
@@ -332,16 +338,10 @@
             "sha1": "2e04d90f4d6565c61d71ecbf9390c23c0ddd5fed"
         },
         {
-            "@id": "850d776aaf4457d8fe239cfb9f9beabd64ef6298/01d8393f836a79fd05528ecede41c737342076db",
-            "@type": "File",
-            "contentSize": "14913",
-            "sha1": "01d8393f836a79fd05528ecede41c737342076db"
-        },
-        {
-            "@id": "#976e2724-ceb3-41ed-a398-c3b8ba6ad8e2",
+            "@id": "#4d9386bc-544d-4ead-96bb-d1975c70f930",
             "@type": "CreateAction",
             "containerImage": {
-                "@id": "#a070ddfa-ffac-40e2-9abb-2a594e0047c5"
+                "@id": "#c004255c-9a6b-4647-9447-2a61d8520a42"
             },
             "endTime": "2023-01-02T19:37:22.781605",
             "instrument": {
@@ -367,14 +367,14 @@
             "startTime": "2023-01-02T19:37:10.475407"
         },
         {
-            "@id": "#0bc16564-910c-4c13-95f0-f3dbab06781f",
+            "@id": "#1b88a235-07ec-4ae3-88ce-ce0ba6984a6b",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/step1"
             },
             "name": "orchestrate clt.cwl",
             "object": {
-                "@id": "#976e2724-ceb3-41ed-a398-c3b8ba6ad8e2"
+                "@id": "#4d9386bc-544d-4ead-96bb-d1975c70f930"
             }
         },
         {
@@ -397,7 +397,7 @@
             "sha1": "e228d3883e1770adf02f0a0bcdc259dda6b27e91"
         },
         {
-            "@id": "#a070ddfa-ffac-40e2-9abb-2a594e0047c5",
+            "@id": "#c004255c-9a6b-4647-9447-2a61d8520a42",
             "@type": "ContainerImage",
             "additionalType": {
                 "@id": "https://w3id.org/ro/terms/workflow-run#DockerImage"

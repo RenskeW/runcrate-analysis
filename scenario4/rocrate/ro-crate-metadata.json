@@ -21,7 +21,7 @@
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
             ],
-            "datePublished": "2023-11-17T13:14:51+00:00",
+            "datePublished": "2023-12-02T21:28:44+00:00",
             "hasPart": [
                 {
                     "@id": "packed.cwl"
@@ -53,7 +53,7 @@
             },
             "mentions": [
                 {
-                    "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712"
+                    "@id": "#e5f904da-aa0e-4e07-a863-5a9697208903"
                 }
             ]
         },
@@ -192,7 +192,7 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#729481f9-8069-4efe-ab02-5e868320c9a1"
+                    "@id": "#0edbdddb-2b5d-4a9b-9b45-c063700adb65"
                 }
             ],
             "position": "0",
@@ -223,7 +223,7 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#43efbd79-38fc-4619-bcea-b4062c2d2663"
+                    "@id": "#2f5b4288-8997-49fb-af86-52f12888dbc7"
                 }
             ],
             "position": "1",
@@ -236,7 +236,7 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#28a1250e-5578-4e9d-a5ff-38b11b129372"
+                    "@id": "#c7beb507-5a00-44f5-8f53-eb5cc724dfc6"
                 }
             ],
             "position": "2",
@@ -266,10 +266,10 @@
             "@type": "HowToStep",
             "connection": [
                 {
-                    "@id": "#346b894f-eae3-44df-bcde-5c170f86cd35"
+                    "@id": "#e7834ac5-be00-4422-8c0b-446987ac0c57"
                 },
                 {
-                    "@id": "#8381cbda-fc2b-4917-9876-f0c2aa492323"
+                    "@id": "#96d52fe7-43b4-443d-b55a-f8aabd4f3690"
                 }
             ],
             "position": "3",
@@ -304,7 +304,7 @@
             "name": "input_file"
         },
         {
-            "@id": "#729481f9-8069-4efe-ab02-5e868320c9a1",
+            "@id": "#0edbdddb-2b5d-4a9b-9b45-c063700adb65",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_array"
@@ -314,7 +314,7 @@
             }
         },
         {
-            "@id": "#43efbd79-38fc-4619-bcea-b4062c2d2663",
+            "@id": "#2f5b4288-8997-49fb-af86-52f12888dbc7",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_file"
@@ -324,7 +324,7 @@
             }
         },
         {
-            "@id": "#28a1250e-5578-4e9d-a5ff-38b11b129372",
+            "@id": "#c7beb507-5a00-44f5-8f53-eb5cc724dfc6",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_string"
@@ -334,7 +334,7 @@
             }
         },
         {
-            "@id": "#346b894f-eae3-44df-bcde-5c170f86cd35",
+            "@id": "#e7834ac5-be00-4422-8c0b-446987ac0c57",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_dir"
@@ -344,7 +344,7 @@
             }
         },
         {
-            "@id": "#8381cbda-fc2b-4917-9876-f0c2aa492323",
+            "@id": "#96d52fe7-43b4-443d-b55a-f8aabd4f3690",
             "@type": "ParameterConnection",
             "sourceParameter": {
                 "@id": "packed.cwl#main/wf_input_file"
@@ -354,38 +354,38 @@
             }
         },
         {
-            "@id": "#184a2daf-cc8a-451a-a3c8-d98009ea8358",
+            "@id": "#814c2afc-3bc7-4e0d-8054-69de4f863e64",
             "@type": "SoftwareApplication",
             "name": "cwltool 3.1.20220802125926"
         },
         {
-            "@id": "#3aedd033-ca76-4f17-907e-63b887eacc5c",
+            "@id": "#82e8a371-6eff-4d98-bdeb-1ad53a4b33ae",
             "@type": "OrganizeAction",
             "instrument": {
-                "@id": "#184a2daf-cc8a-451a-a3c8-d98009ea8358"
+                "@id": "#814c2afc-3bc7-4e0d-8054-69de4f863e64"
             },
             "name": "Run of cwltool 3.1.20220802125926",
             "object": [
                 {
-                    "@id": "#2d105d77-f17a-48bb-b662-f81332193a8e"
+                    "@id": "#8da003c9-3c0e-45b3-8b43-32c9c8c758ac"
                 },
                 {
-                    "@id": "#0b4deaf1-20e3-42d5-a1fe-75ea908b7359"
+                    "@id": "#3e8794b4-c8ac-4232-8f67-d274040d5702"
                 },
                 {
-                    "@id": "#36b9699f-8481-4ded-9352-143db90d2041"
+                    "@id": "#0e1a4223-30eb-4669-95fb-6165b037a5b0"
                 },
                 {
-                    "@id": "#c4a87818-34de-4fef-8f19-394ed235add3"
+                    "@id": "#765966e8-ee86-4a0f-ad9d-fb78211de77c"
                 }
             ],
             "result": {
-                "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712"
+                "@id": "#e5f904da-aa0e-4e07-a863-5a9697208903"
             },
             "startTime": "2023-01-03T18:09:23.192514"
         },
         {
-            "@id": "#b3d3340d-6e24-42e3-8060-a7ea83a2d712",
+            "@id": "#e5f904da-aa0e-4e07-a863-5a9697208903",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:24.461647",
             "instrument": {
@@ -484,10 +484,10 @@
             "contentSize": "4598025",
             "exampleOfWork": [
                 {
-                    "@id": "packed.cwl#date.cwl/file"
+                    "@id": "packed.cwl#main/wf_input_file"
                 },
                 {
-                    "@id": "packed.cwl#main/wf_input_file"
+                    "@id": "packed.cwl#date.cwl/file"
                 },
                 {
                     "@id": "packed.cwl#echo.cwl/input_file"
@@ -505,7 +505,7 @@
             "value": "wf_input_string_value"
         },
         {
-            "@id": "#be5bff51-07db-431c-8acb-ac63690215b7",
+            "@id": "#5c8be40b-3773-4d51-ad01-5ef55c6d8e5d",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:23.598752",
             "instrument": {
@@ -521,18 +521,18 @@
             "startTime": "2023-01-03T18:09:23.529254"
         },
         {
-            "@id": "#2d105d77-f17a-48bb-b662-f81332193a8e",
+            "@id": "#8da003c9-3c0e-45b3-8b43-32c9c8c758ac",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/date_step"
             },
             "name": "orchestrate date.cwl",
             "object": {
-                "@id": "#be5bff51-07db-431c-8acb-ac63690215b7"
+                "@id": "#5c8be40b-3773-4d51-ad01-5ef55c6d8e5d"
             }
         },
         {
-            "@id": "#878fbfe8-4ec5-435c-9f7c-a253d8e09b2f",
+            "@id": "#30fd0367-b862-45ac-925b-12d319f15489",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:23.919038",
             "instrument": {
@@ -548,7 +548,7 @@
             "startTime": "2023-01-03T18:09:23.632501"
         },
         {
-            "@id": "#0b4deaf1-20e3-42d5-a1fe-75ea908b7359",
+            "@id": "#3e8794b4-c8ac-4232-8f67-d274040d5702",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/date2_step"
@@ -556,15 +556,15 @@
             "name": "orchestrate date.cwl",
             "object": [
                 {
-                    "@id": "#878fbfe8-4ec5-435c-9f7c-a253d8e09b2f"
+                    "@id": "#30fd0367-b862-45ac-925b-12d319f15489"
                 },
                 {
-                    "@id": "#73f746d1-c15a-4924-ab4b-2162c12fb77d"
+                    "@id": "#548b6ef3-c2d3-465a-a41e-c490f78e2f6f"
                 }
             ]
         },
         {
-            "@id": "#73f746d1-c15a-4924-ab4b-2162c12fb77d",
+            "@id": "#548b6ef3-c2d3-465a-a41e-c490f78e2f6f",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:24.134651",
             "instrument": {
@@ -580,7 +580,7 @@
             "startTime": "2023-01-03T18:09:24.058961"
         },
         {
-            "@id": "#0dba8e6d-b4e3-49f4-a3d1-c143c6742937",
+            "@id": "#b6bf2142-ab75-4c5a-b633-0fc918f7f85b",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:24.216133",
             "instrument": {
@@ -596,14 +596,14 @@
             "startTime": "2023-01-03T18:09:24.162564"
         },
         {
-            "@id": "#36b9699f-8481-4ded-9352-143db90d2041",
+            "@id": "#0e1a4223-30eb-4669-95fb-6165b037a5b0",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/echo2_step"
             },
             "name": "orchestrate main/echo2_step/run",
             "object": {
-                "@id": "#0dba8e6d-b4e3-49f4-a3d1-c143c6742937"
+                "@id": "#b6bf2142-ab75-4c5a-b633-0fc918f7f85b"
             }
         },
         {
@@ -616,7 +616,7 @@
             "value": "wf_input_string_value"
         },
         {
-            "@id": "#fbf043d7-b156-42e4-bb62-0d805b8f9b57",
+            "@id": "#48dae175-6c44-4bd9-a0a7-1b5d12046d52",
             "@type": "CreateAction",
             "endTime": "2023-01-03T18:09:24.411485",
             "instrument": {
@@ -635,14 +635,14 @@
             "startTime": "2023-01-03T18:09:24.323259"
         },
         {
-            "@id": "#c4a87818-34de-4fef-8f19-394ed235add3",
+            "@id": "#765966e8-ee86-4a0f-ad9d-fb78211de77c",
             "@type": "ControlAction",
             "instrument": {
                 "@id": "packed.cwl#main/echo_step"
             },
             "name": "orchestrate echo.cwl",
             "object": {
-                "@id": "#fbf043d7-b156-42e4-bb62-0d805b8f9b57"
+                "@id": "#48dae175-6c44-4bd9-a0a7-1b5d12046d52"
             }
         },
         {
