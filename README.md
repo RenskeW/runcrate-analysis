@@ -41,21 +41,21 @@ Explanation of the design of the workflow and its steps can be included in the C
 - **CWLProv RDF**: no representation
 
 ### SC2: Entity annotations
-Explanation of the meaning of individual input/output data entities can be represented as annotations in the CWL input parameter file (not propagated to `ro-crate-metadata.json`) and CWL workflow (CWL metadata fields).
+Explanation of the meaning of individual input/output data entities can be represented as structured annotations in the CWL input parameter file (not propagated to `ro-crate-metadata.json`), but there is in the CWL standards v1.2 no clear guideline how to do these annotations.
 
-- **CWL (non-RDF)**: full representation
-- **`ro-crate-metadata.json` (RDF)**: partial representation (only CWL metadata fields)
+- **CWL (non-RDF)**: partial representation (structured annotations but no CWL metadata fields)
+- **`ro-crate-metadata.json` (RDF)**: no representation
 - **CWLProv RDF**: no representation
 
 ### SC3: Workflow execution annotations
-Workflow execution annotations (why was this combination of input parameters chosen?) can be represented as annotations in the CWL input parameter file (not propagated to `ro-crate-metadata.json`).
+Workflow execution annotations (why was this combination of input parameters chosen?) can be represented as annotations in the CWL input parameter file (unstructured, not propagated to `ro-crate-metadata.json`).
 
-- **CWL (non-RDF)**: full representation
+- **CWL (non-RDF)**: unstructured representation
 - **`ro-crate-metadata.json` (RDF)**: no representation
 - **CWLProv RDF**: no representation
 
 ### D1: Data identification
-This information can be added in the CWL input parameter file as structured annotations, but there is in the CWL standards v2 no clear guideline how to do these annotations. I
+This information can be added in the CWL input parameter file as structured annotations, but there is in the CWL standards v1.2 no clear guideline how to do these annotations. I
 
 - **CWL (non-RDF)**: partial representation
 - **`ro-crate-metadata.json` (RDF)**: no representation
@@ -69,7 +69,7 @@ Filename, checksum are represented for all files, creation timestamps are availa
 - **CWLProv RDF**: partial representation
 
 ### D3: Data access
-The CWL standards v2 allow specification of a remote location for data, which would serve as access to a downloadable form of the data.
+The CWL standards v1.2 allow specification of a remote location for data, which would serve as access to a downloadable form of the data.
 
 - **CWL (non-RDF)**: partial representation
 - **`ro-crate-metadata.json` (RDF)**: no representation
@@ -84,33 +84,35 @@ Mapping of input/output data to workflow parameters is represented in `ro-crate-
 
 ### SW1: Software identification
 
-`SoftwareRequirement` field is propagated to `ro-crate-metadata.json`.
+`SoftwareRequirement` field is propagated to `ro-crate-metadata.json`. `SoftwareRequirement` contains `specs` field with IRI, resolving to landing page with metadata about the tool (see [CWL standards v1.2](https://www.commonwl.org/v1.2/CommandLineTool.html#SoftwarePackage)). 
 
-- **CWL (non-RDF)**: FULL representation
-- **`ro-crate-metadata.json` (RDF)**: **FULL?** representation
+- **CWL (non-RDF)**: full representation
+- **`ro-crate-metadata.json` (RDF)**: full representation
 - **CWLProv RDF**: no representation
 
 ### SW2: Software documentation
 
 `SoftwareRequirement` field is propagated to `ro-crate-metadata.json`.
 
-- **CWL (non-RDF)**: FULL?? representation
-- **`ro-crate-metadata.json` (RDF)**: **FULL?** representation
+- **CWL (non-RDF)**: full representation
+- **`ro-crate-metadata.json` (RDF)**: full representation
 - **CWLProv RDF**: no representation
 
 ### SW3: Software access
 
 `SoftwareRequirement` field is propagated to `ro-crate-metadata.json`.
 
-- **CWL (non-RDF)**: FULL?? representation
-- **`ro-crate-metadata.json` (RDF)**: **FULL?** representation
+- **CWL (non-RDF)**: full representation
+- **`ro-crate-metadata.json` (RDF)**: full representation
 - **CWLProv RDF**: no representation
 
 ### WF1: Workflow software
 
+The workflow itself (`packed.cwl`) is contained in the CWLProv RO Bundle, as well as the RO-Crate produced by runcrate. Metadata/documentation about the workflow can be represented in CWL metadata fields (`doc`, `label`, `intent`), which are propagated to `ro-crate-metadata.json`. `ro-crate-metadata.json` also contains a description of the workflow and all its parameters and steps. The representation of the workflow in CWLProv RDF is incomplete.
+
 - **CWL (non-RDF)**: full representation
-- **`ro-crate-metadata.json` (RDF)**: ??
-- **CWLProv RDF**: no representation
+- **`ro-crate-metadata.json` (RDF)**: full representation
+- **CWLProv RDF**: partial representation
 
 ### WF2: Workflow parameters
 Information about the workflow parameters can be represented in the CWL metadata fields (`doc`, `label`, `format`).
@@ -142,9 +144,9 @@ Container image is partially represented in CWL `DockerRequirement` field, which
 
 ### EX1: Execution timestamps
 
-- **CWL (non-RDF)**: full representation
+- **CWL (non-RDF)**: no representation
 - **`ro-crate-metadata.json` (RDF)**: full representation
-- **CWLProv RDF**: no representation
+- **CWLProv RDF**: full representation
 
 ### EX2: Consumed resources
 Absent.
@@ -152,8 +154,8 @@ Absent.
 ### EX3: Workflow engine
 
 - **CWL (non-RDF)**: no representation
-- **`ro-crate-metadata.json` (RDF)**: full representation
-- **CWLProv RDF**: partial representation (less structured than in RO-Crate)
+- **`ro-crate-metadata.json` (RDF)**: partial representation
+- **CWLProv RDF**: partial representation (only name and version, no IRI resolving to landing page with metadata)
 
 ### EX4: Human agent
 
