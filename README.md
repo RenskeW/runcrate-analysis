@@ -2,9 +2,9 @@
 
 This repository documents the analysis of Workflow Run RO-Crates (WRROC) converted from CWLProv RO Bundles using [runcrate](https://github.com/ResearchObject/runcrate). The results of this analysis are also published on Zenodo: <https://doi.org/10.5281/zenodo.12689424>. 
 
-The analysis follows the same methodology as [previous work](https://doi.org/10.5281/zenodo.7014950), in which we conducted a qualitative evaluation of metadata coverage in CWLProv (version 0.6.0). This earlier analysis was based on concrete examples of ROs associated with a realistic bioinformatics workflow. Here, we repeated the analysis for Workflow Run RO-Crate, and compared the WRROC RDF representation (in `ro-crate-metadata.json`) with the CWLProv RDF provenance graph. 
+The analysis follows the same methodology as [previous work](https://doi.org/10.5281/zenodo.7113250), in which we conducted a qualitative evaluation of metadata coverage in CWLProv (version 0.6.0). This earlier analysis was based on concrete examples of ROs associated with a realistic bioinformatics workflow. Here, we repeated the analysis for Workflow Run RO-Crate, and compared the WRROC RDF representation (in `ro-crate-metadata.json`) with the CWLProv RDF provenance graph. 
 
-## Methods
+## Methods 
 
 We used the following approach and documented it in the [Issues](https://github.com/RenskeW/runcrate-analysis/issues):
 
